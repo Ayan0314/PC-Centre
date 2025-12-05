@@ -88,3 +88,50 @@ body {
 .time{
     padding-right: 20px;
 }
+.list-group-item{
+    border: none !important;
+}
+.list-group :hover{
+color: #0047AB;
+}
+.heading{
+    font-size: large;
+}
+.categories {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  width: 900px;       
+  max-width: 95%;     
+  margin: 50px auto; 
+}
+.categories .heading {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+.categories .list-group-item {
+  border: none;
+  padding: 14px 10px;
+  background: transparent;
+  font-size: 17px;
+}
+.categories-filter-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  width: 900px;
+  max-width: 95%;
+  margin: 50px auto;
+}
+.categories-filter-box hr {
+  border: 1px solid #ccc; /* Grey line */
+  margin: 15px 0;         /* Space above and below line */
+}
+
+
+
+
+
