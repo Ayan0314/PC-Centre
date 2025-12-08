@@ -97,15 +97,10 @@
         </div>
       </div>
     </nav>
-   
- 
-
-
-<!-- ---------categories----------------------- -->
-<div class="categories align-items-center">
-
+    <!-- -----------------categories------------------ -->
+   <div class="categories align-items-center" style="float: left; width: 250px; padding-right: 20px;">
   <p class="heading fw-bold mt-4">Categories</p>
-
+  
   <ul class="list-group">
     <li class="list-group-item">Display</li>
     <li class="list-group-item">Motherboards & Processors</li>
@@ -120,7 +115,9 @@
     <li class="list-group-item">UPS</li>
     <li class="list-group-item">Accessories</li>
   </ul>
+
   <hr>
+
   <!-- Price Range Dropdown -->
   <p>Price Range</p>
   <select class="form-select mb-3">
@@ -150,12 +147,31 @@
     <option>Logitech</option>
     <option>APC</option>
   </select>
-
 </div>
 
+ 
 
 
 
+<!-- -------------product found-------------------------------- -->
+<div class="product-toolbar">
+  <div class="products-count">
+    13 products found
+  </div>
+
+  <div class="toolbar-right">
+    <label for="sortSelect">Sort by:</label>
+    <select id="sortSelect">
+      <option value="name">Name</option>
+      <option value="price-low-high">Price: Low to High</option>
+      <option value="price-high-low">Price: High to Low</option>
+        <option value="rating">rating</option>
+    </select>
+
+    <button class="view-btn active" title="Grid view">&#9638;</button>
+    <button class="view-btn" title="List view">&#9776;</button>
+  </div>
+</div>
     <!-- Footer -->
     <div class="foo container-fluid bg-dark">
       <div class="row">
