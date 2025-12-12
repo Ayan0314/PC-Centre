@@ -5,16 +5,8 @@
  }
  body {
   overflow-x: hidden;
-<<<<<<< HEAD
-  margin: 0;
-  background-color: #f3f4f6 !important;
-}
-
-.hea{
-=======
  }
  .hea{
->>>>>>> 20edbdef967342b489456995a2116709a5865bf2
     display: flex;
     justify-content:space-between;
     text-align: center;
@@ -490,3 +482,41 @@ color: #0047AB;
   margin-right: 0;
 }
 
+  .contact-header{
+      background: linear-gradient(to right, #0047AB, #002f6c);
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .contact-box{
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .contact-info i{
+      font-size: 22px;
+      color: #0047AB;
+      margin-right: 10px;
+    }
+
+    .contact-info p{
+      margin: 0;
+      color: #333;
+    }
+
+    .btn-primary{
+      background-color: #0047AB;
+      border: none;
+    }
+
+    .btn-primary:hover{
+      background-color: #003080;
+    }
+
+    .map{
+      border-radius: 10px;
+      overflow: hidden;
+    }
