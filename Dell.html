@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dreamweaver - PCcentre</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PCcentre</title>
     <link rel="icon" href="images/logo (2).png" />
     <link
       rel="stylesheet"
@@ -14,61 +14,71 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
-</head>
-<body>
-    <!--------------------- header ------------------------>
-    <div class="hea container-fluid">
+  </head>
+  <body>
+    <!-- header -->
+    <div
+      class="container-fluid bg-dark text-white py-2 px-4 d-flex justify-content-between align-items-center"
+    >
       <div>
-        <i class="bi bi-telephone"> </i>
+        <i class="bi bi-telephone"></i>
         <span>Support: +1 (555) 123-4567</span>
       </div>
-      <div class="time">
-        <p>Mon-Sat: 9:00 AM - 8:00 PM</p>
+      <div>
+        <i class="bi bi-clock"></i>
+        <span>Mon-Sat: 9:00 AM - 8:00 PM</span>
       </div>
     </div>
-<!------------------------ Navbar --------------------------->
-    <nav class="nab navbar navbar-expand-lg shadow">
+
+    <nav
+      class="nab navbar navbar-expand-lg sticky-top shadow"
+      style="background-color: #0047ab"
+    >
       <div class="container-fluid">
-        <a class="navbar-brand text-white" href="#"
-          ><img
+        <a class="navbar-brand text-white" href="#">
+          <img
             src="images/logo (2).png"
             alt="logo"
             style="height: 50px; width: 50px"
-        /></a>
+          />
+        </a>
+
         <button
-          class="navbar-toggler"
+          class="navbar-toggler text-white border-white"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="l nav-item">
-              <a
-                class="na nav-link active text-white"
-                aria-current="page"
-                href="index.html"
-                >Home</a
-              >
-            </li>
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0"
+            style="padding-left: 300px"
+          >
             <li class="nav-item">
-              <a class="na nav-link text-white" href="product.html">Products</a>
+              <a class="nav-link active text-white nav-link-custom" href="index.html">Home</a>
             </li>
+
             <li class="nav-item">
-              <a class="na nav-link text-white" href="#">Help & FAQs</a>
+              <a class="nav-link text-white nav-link-custom" href="product.html">Products</a>
             </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white nav-link-custom" href="#">Help & FAQs</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white nav-link-custom" href="Contact.html">Contact Us</a>
+            </li>
+
             <li class="nav-item dropdown">
               <a
-                class="na nav-link text-white"
+                class="nav-link text-white"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
-                aria-expanded="false"
               >
                 Company Catalogs
               </a>
@@ -82,130 +92,146 @@
               </ul>
             </li>
           </ul>
-          <div class="ic" role="search">
-            <div>
-              <h5><i class="bi bi-search text-white"></i></h5>
-            </div>
-            <div>
-              <h5>
-                <i class="bi bi-cart text-white"
-                  ><sup><span class="badge text-bg-danger">0</span></sup></i
-                >
-              </h5>
+
+          <div class="d-flex align-items-center gap-3 me-3">
+            <i class="bi bi-search text-white h5 m-0"></i>
+
+            <div class="position-relative">
+              <i class="bi bi-cart text-white h5 m-0"></i>
+              <span
+                class="badge bg-danger position-absolute top-0 start-100 translate-middle px-2"
+                >0</span
+              >
             </div>
           </div>
         </div>
       </div>
     </nav>
-    <!-- ------------------info section------------ -->
-     <div class="head">
-        <h6>Dell Product Catalog</h6>
-        <p>Browse our complete selection of Dell products. All items come with manufacturer Warranty and our dedicated support.</p>
-        </div>
-        
-       <div class="info-section">
-        <div class="info-box">
-            <h6>2</h6>
-            <p>Products Available</p>
-        </div>
-        <div class="info-box">
-            <h6>2</h6>
-            <p>Product Categories</p>
-        </div>
-        <div class="info-box">
-            <h6 class="authorized">Authorized</h6>
-            <p>Official Dealer</p>
-        </div>
-       </div>
-     <!-- -----------------card------------------------- -->
-     <div class="row">
-        <h5>Display</h5>
-         <div class="col-md-4 acercard">
-    <div class="card2" style="width: 18rem;">
-    <img src="images/Dell ultra sharp.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-    <h5 class="card-title">Dell</h5>
-    <p class="card-text">Dell UltraSharp 27" 4K Monitor </p>
-    <span>⭐⭐⭐⭐ (234)</span><br>
-    <del>699.99</del>
-    <span>$549.99</span>
-    </div>
-   </div>
-  </div>
 
-  <h5>Notebook</h5>
-   <div class="col-md-4 acercard">
-    <div class="card2" style="width: 18rem;">
-    <img src="images/Dell XPS 15.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-    <h5 class="card-title">Dell</h5>
-    <p class="card-text">Dell XPS 15 Laptop</p>
-    <span>⭐⭐⭐⭐ (289)</span>
-    <p>$1899.99</p>
+          <!-- RIGHT ICONS -->
+          <div class="d-flex align-items-center gap-3 me-3">
+            <i class="bi bi-search text-white h5 m-0"></i>
+
+            <div class="position-relative">
+              <i class="bi bi-cart text-white h5 m-0"></i>
+              <span
+                class="badge bg-danger position-absolute top-0 start-100 translate-middle px-2"
+                >0</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ------------------info section------------ -->
+    <div class="head">
+      <h6>Dell Product Catalog</h6>
+      <p>
+        Browse our complete selection of Dell products. All items come with
+        manufacturer Warranty and our dedicated support.
+      </p>
     </div>
-   </div>
-  </div>
-     </div>
-    <!----------------- Footer ------------------->
-    <div class="foo container-fluid bg-dark">
-      <div class="row">
-        <div class="cdd col-md-3">
-          <h5>Dreamweaver - PCcentre</h5>
-          <p class="d dd">
+
+    <div class="info-section">
+      <div class="info-box">
+        <h6>2</h6>
+        <p>Products Available</p>
+      </div>
+      <div class="info-box">
+        <h6>2</h6>
+        <p>Product Categories</p>
+      </div>
+      <div class="info-box">
+        <h6 class="authorized">Authorized</h6>
+        <p>Official Dealer</p>
+      </div>
+    </div>
+    <!-- -----------------card------------------------- -->
+    <div class="row">
+      <h5>Display</h5>
+      <div class="col-md-4 acercard">
+        <div class="card2" style="width: 18rem">
+          <img
+            src="images/Dell ultra sharp.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Dell</h5>
+            <p class="card-text">Dell UltraSharp 27" 4K Monitor</p>
+            <span>⭐⭐⭐⭐ (234)</span><br />
+            <del>699.99</del>
+            <span>$549.99</span>
+          </div>
+        </div>
+      </div>
+
+      <h5>Notebook</h5>
+      <div class="col-md-4 acercard">
+        <div class="card2" style="width: 18rem">
+          <img src="images/Dell XPS 15.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Dell</h5>
+            <p class="card-text">Dell XPS 15 Laptop</p>
+            <span>⭐⭐⭐⭐ (289)</span>
+            <p>$1899.99</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark text-white pt-4">
+      <div class="row px-4">
+        <div class="col-md-3 mb-3">
+          <h5>PC Centre</h5>
+          <p>
             Your trusted IT solutions partner with over 2 years of experience
             and 1,000+ products from leading manufacturers.
           </p>
-          <i class="dd bi bi-facebook"></i>
-          <i class="dd ga bi bi-twitter"></i>
-          <i class="dd ga bi bi-instagram"></i>
-          <i class="dd ga bi bi-linkedin"></i>
+          <i class="bi bi-facebook me-2 hovee"></i>
+          <i class="bi bi-twitter me-2 hovee"></i>
+          <i class="bi bi-instagram me-2 hovee"></i>
+          <i class="bi bi-linkedin hovee"></i>
         </div>
-        <div class="cddd col-md-3">
+
+        <div class="col-md-3 mb-3" style="padding-left: 90px">
           <h5>Quick Links</h5>
-          <p class="dd dow">Home</p>
-          <p class="dd">Products</p>
-          <p class="dd">Help & Support</p>
-          <p class="dd">About Us</p>
-          <p class="dd">Contact</p>
+          <p class="hovee">Home</p>
+          <p class="hovee">Products</p>
+          <p class="hovee">Help & Support</p>
+          <p class="hovee">About Us</p>
+          <a href="Contact.html" style="text-decoration: none; color: white">
+            <p class="hovee">Contact</p>
+            </a>
         </div>
-        <div class="cdddd col-md-3">
+
+        <div class="col-md-3 mb-3" style="padding-left: 90px">
           <h5>Categories</h5>
-          <p class="dd dow">Notebooks</p>
-          <p class="dd">Displays</p>
-          <p class="dd">Storage</p>
-          <p class="dd">Printers</p>
-          <p class="dd">Accessories</p>
+          <p class="hovee">Notebooks</p>
+          <p class="hovee">Displays</p>
+          <p class="hovee">Storage</p>
+          <p class="hovee">Printers</p>
+          <p class="hovee">Accessories</p>
         </div>
-        <div class="co col-md-3">
+
+        <div class="col-md-3 mb-3" style="padding-left: 90px">
           <h5>Contact Us</h5>
-          <div>
-            <i class="dd bi bi-geo-alt"></i>
-            <span class="dd">123 Tech Street, Downtown</span>
-          </div>
-          <div>
-            <i class="dd bi bi-telephone"></i>
-            <span class="dd">+1 (555) 123-4567</span>
-          </div>
-          <div>
-            <i class="dd bi bi-envelope"></i>
-            <span class="dd">support@pccentre.com</span>
-          </div>
+          <p><i class="bi bi-geo-alt"></i> 123 Tech Street, Karachi</p>
+          <p><i class="bi bi-telephone"></i> +1 (555) 123-4567</p>
+          <p><i class="bi bi-envelope"></i> support@pccentre.com</p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12 container">
-          <hr style="color: #d1d5db" />
-        </div>
+
+      <hr class="container" />
+
+      <div class="text-center pb-3">
+        <p class="mb-0">
+          © 2025 PC Centre. All rights reserved. | Privacy Policy | Terms of
+          Service
+        </p>
       </div>
-      <div class="row">
-        <div class="dd mid col-md-12">
-          <p>
-            © 2025 Dreamweaver - PCcentre. All rights reserved. | Privacy Policy
-            | Terms of Service
-          </p>
-        </div>
-      </div>
-    </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>

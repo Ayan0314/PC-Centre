@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dreamweaver - PCcentre</title>
+    <title>Products - PCcentre</title>
     <link rel="icon" href="images/logo (2).png" />
     <link
       rel="stylesheet"
@@ -21,7 +21,7 @@
     ></script>
   </head>
   <body>
-    <!--------------------- header ------------------------>
+    <!-- header -->
     <div
       class="container-fluid bg-dark text-white py-2 px-4 d-flex justify-content-between align-items-center"
     >
@@ -34,52 +34,56 @@
         <span>Mon-Sat: 9:00 AM - 8:00 PM</span>
       </div>
     </div>
-    <!------------------------ Navbar --------------------------->
-    <nav class="nab navbar navbar-expand-lg shadow">
+
+    <nav
+      class="nab navbar navbar-expand-lg sticky-top shadow"
+      style="background-color: #0047ab"
+    >
       <div class="container-fluid">
-        <a class="navbar-brand text-white" href="#"
-          ><img
+        <a class="navbar-brand text-white" href="#">
+          <img
             src="images/logo (2).png"
             alt="logo"
             style="height: 50px; width: 50px"
-        /></a>
+          />
+        </a>
+
         <button
-          class="navbar-toggler"
+          class="navbar-toggler text-white border-white"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="l nav-item">
-              <a
-                class="na nav-link active text-white"
-                aria-current="page"
-                href="index.html"
-                >Home</a
-              >
-            </li>
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0"
+            style="padding-left: 300px"
+          >
             <li class="nav-item">
-              <a class="na nav-link text-white" href="product.html">Products</a>
+              <a class="nav-link active text-white nav-link-custom" href="index.html">Home</a>
             </li>
+
             <li class="nav-item">
-              <a class="na nav-link text-white" href="#">Help & FAQs</a>
+              <a class="nav-link text-white nav-link-custom" href="product.html">Products</a>
             </li>
+
             <li class="nav-item">
-              <a class="na nav-link text-white" href="Contact.html">Contact Us</a>
+              <a class="nav-link text-white nav-link-custom" href="#">Help & FAQs</a>
             </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white nav-link-custom" href="Contact.html">Contact Us</a>
+            </li>
+
             <li class="nav-item dropdown">
               <a
-                class="na nav-link text-white"
+                class="nav-link text-white"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
-                aria-expanded="false"
               >
                 Company Catalogs
               </a>
@@ -93,16 +97,16 @@
               </ul>
             </li>
           </ul>
-          <div class="ic" role="search">
-            <div>
-              <h5><i class="bi bi-search text-white"></i></h5>
-            </div>
-            <div>
-              <h5>
-                <i class="bi bi-cart text-white"
-                  ><sup><span class="badge text-bg-danger">0</span></sup></i
-                >
-              </h5>
+
+          <div class="d-flex align-items-center gap-3 me-3">
+            <i class="bi bi-search text-white h5 m-0"></i>
+
+            <div class="position-relative">
+              <i class="bi bi-cart text-white h5 m-0"></i>
+              <span
+                class="badge bg-danger position-absolute top-0 start-100 translate-middle px-2"
+                >0</span
+              >
             </div>
           </div>
         </div>
@@ -157,7 +161,6 @@
         <option>APC</option>
       </select>
     </div>
-<<<<<<< HEAD
     <!-- ---------------------product found-------------------------------- -->
     <div class="product-toolbar">
       <div class="products-count">12 products found</div>
@@ -175,143 +178,6 @@
     </div>
     <!-- -----------------card------------------------- -->
     <div class="container-fluid">
-=======
-   </div>
- </div>
- <div class="col-md-4 cards">
-    <div class="card" style="width: 18rem;">
-    <img src="images/Apc Back-UPS.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-    <h5 class="card-title">APC</h5>
-    <p class="card-text">APC Back-UPS Pro 1500VA</p>
-    <span>⭐⭐⭐⭐ (1876)</span>
-    <p>$249.99</p>
-    <a href="Apcbackups.html" class="stretched-link"></a>
-    </div>
-   </div>
-  </div>
-  <div class="col-md-4 cards">
-    <div class="card" style="width: 18rem;">
-    <img src="images/Asus Rog.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-    <h5 class="card-title">ASUS</h5>
-    <p class="card-text">ASUS ROG Strix Z790-E Gaming WiFi</p>
-    <span>⭐⭐⭐⭐ (156)</span><br>
-    <del>$529.99</del>
-    <span>$449.99</span>
-    <a href="Asusrogstrix.html" class="stretched-link"></a>
-    </div>
-   </div>
-  </div>
-  <div class="col-md-4 cards">
-    <div class="card" style="width: 18rem;">
-    <img src="images/Asus Rog Swift.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-    <h5 class="card-title">ASUS</h5>
-    <p class="card-text">ASUS ROG Swift 34" Curved Gaming...</p>
-    <span>⭐⭐⭐⭐ (187)</span>
-    <p>$899.99</p>
-    <a href="Asusswift.html" class="stretched-link"></a>
-    </div>
-   </div>
-  </div>
-  <div class="col-md-4 cards">
-    <div class="card" style="width: 18rem;">
-    <img src="images/Zephyrus G14 gaming laptop.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-    <h5 class="card-title">ASUS</h5>
-    <p class="card-text">ASUS ROG Zephyrus G14 Curved Gaming Laptop</p>
-    <span>⭐⭐⭐⭐ (341)</span><br>
-    <del>1899.99</del>
-    <span>$1649.99</span>
-    <a href="AsusZephyrus.html" class="stretched-link"></a>
-    </div>
-   </div>
-  </div>
-  <div class="col-md-4 cards">
-    <div class="card" style="width: 18rem;">
-    <img src="images/Corsair K95 keyboard.avif" class="card-img-top" alt="...">
-    <div class="card-body">
-    <h5 class="card-title">Corsair</h5>
-    <p class="card-text">Corsair K95 RGB Platinum Mechhaniica...</p>
-    <span>⭐⭐⭐⭐ (876)</span><br>
-    <del>199.99</del>
-    <span>$179.99</span>
-    </div>
-   </div>
-  </div>
-  <div class="col-md-4 cards">
-    <div class="card" style="width: 18rem;">
-    <img src="images/Corsair Vengeance DDRS.webp" class="card-img-top" alt="...">
-    <div class="card-body">
-    <h5 class="card-title">Corsair</h5>
-    <p class="card-text">Corsair Vengeance DDR5 32GB (2x16GB)</p>
-    <span>⭐⭐⭐⭐ (398)</span>
-    <p>$159.99</p>
-    </div>
-   </div>
-  </div>
-  <div class="col-md-4 cards">
-    <div class="card" style="width: 18rem;">
-    <img src="images/Dell ultra sharp.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-    <h5 class="card-title">Dell</h5>
-    <p class="card-text">Dell UltraSharp 27" 4K Monitor </p>
-    <span>⭐⭐⭐⭐ (234)</span><br>
-    <del>699.99</del>
-    <span>$549.99</span>
-    </div>
-   </div>
-  </div>
-  <div class="col-md-4 cards">
-    <div class="card" style="width: 18rem;">
-    <img src="images/Dell XPS 15.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-    <h5 class="card-title">Dell</h5>
-    <p class="card-text">Dell XPS 15 Laptop</p>
-    <span>⭐⭐⭐⭐ (289)</span>
-    <p>$1899.99</p>
-    </div>
-   </div>
-  </div>
-  <div class="col-md-4 cards">
-    <div class="card" style="width: 18rem;">
-    <img src="images/Hp Laserjet Pro.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-    <h5 class="card-title">HP</h5>
-    <p class="card-text">HP Laserjet Pro M404dn</p>
-    <span>⭐⭐⭐⭐ (432)</span>
-    <p>$329.99</p>
-    </div>
-   </div>
-  </div>
-  <div class="col-md-4 cards">
-    <div class="card" style="width: 18rem;">
-    <img src="images/intel corei9 13900k processor.webp" class="card-img-top" alt="...">
-    <div class="card-body">
-    <h5 class="card-title">Intel</h5>
-    <p class="card-text">Intel Core i9-13900K Processor</p>
-    <span>⭐⭐⭐⭐ (412)</span> 
-    <p>$589.99</p>
-    </div>
-   </div>
-  </div>
- <div class="col-md-4 cards">
-    <div class="card" style="width: 18rem;">
-    <img src="images/logitech MX master 3s.webp" class="card-img-top" alt="...">
-    <div class="card-body">
-    <h5 class="card-title">Logitech</h5>
-    <p class="card-text">Logitech MX Master 3S Wireless Mouse</p>
-    <span>⭐⭐⭐⭐ (2341)</span>
-    <p>$99.99</p>
-    </div>
-   </div>
-   </div>
-  </div>
- </div>
-<!----------------- Footer ------------------->
-    <div class="foo container-fluid bg-dark">
->>>>>>> 4f02f340a8041d9f17914e858017a7f16a91c881
       <div class="row">
         <div class="col-md-4 cards">
           <div class="card" style="width: 18rem">
@@ -486,7 +352,7 @@
         </div>
       </div>
     </div>
-    <!----------------- Footer ------------------->
+    <!-- Footer -->
     <footer class="container-fluid bg-dark text-white pt-4">
       <div class="row px-4">
         <div class="col-md-3 mb-3">
@@ -495,44 +361,46 @@
             Your trusted IT solutions partner with over 2 years of experience
             and 1,000+ products from leading manufacturers.
           </p>
-          <i class="bi bi-facebook me-2"></i>
-          <i class="bi bi-twitter me-2"></i>
-          <i class="bi bi-instagram me-2"></i>
-          <i class="bi bi-linkedin"></i>
+          <i class="bi bi-facebook me-2 hovee"></i>
+          <i class="bi bi-twitter me-2 hovee"></i>
+          <i class="bi bi-instagram me-2 hovee"></i>
+          <i class="bi bi-linkedin hovee"></i>
         </div>
 
         <div class="col-md-3 mb-3" style="padding-left: 90px">
           <h5>Quick Links</h5>
-          <p>Home</p>
-          <p>Products</p>
-          <p>Help & Support</p>
-          <p>About Us</p>
-          <p>Contact</p>
+          <p class="hovee">Home</p>
+          <p class="hovee">Products</p>
+          <p class="hovee">Help & Support</p>
+          <p class="hovee">About Us</p>
+          <a href="Contact.html" style="text-decoration: none; color: white">
+            <p class="hovee">Contact</p>
+            </a>
         </div>
 
         <div class="col-md-3 mb-3" style="padding-left: 90px">
           <h5>Categories</h5>
-          <p>Notebooks</p>
-          <p>Displays</p>
-          <p>Storage</p>
-          <p>Printers</p>
-          <p>Accessories</p>
+          <p class="hovee">Notebooks</p>
+          <p class="hovee">Displays</p>
+          <p class="hovee">Storage</p>
+          <p class="hovee">Printers</p>
+          <p class="hovee">Accessories</p>
         </div>
 
         <div class="col-md-3 mb-3" style="padding-left: 90px">
           <h5>Contact Us</h5>
-          <p><i class="bi bi-geo-alt"></i> 123 Tech Street, Downtown</p>
+          <p><i class="bi bi-geo-alt"></i> 123 Tech Street, Karachi</p>
           <p><i class="bi bi-telephone"></i> +1 (555) 123-4567</p>
           <p><i class="bi bi-envelope"></i> support@pccentre.com</p>
         </div>
       </div>
 
-      <hr />
+      <hr class="container" />
 
       <div class="text-center pb-3">
         <p class="mb-0">
-          © 2025 PC Centre. All rights reserved. | Privacy Policy |
-          Terms of Service
+          © 2025 PC Centre. All rights reserved. | Privacy Policy | Terms of
+          Service
         </p>
       </div>
     </footer>

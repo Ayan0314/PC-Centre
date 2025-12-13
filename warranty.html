@@ -2,24 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PC Centre</title>
-    <link rel="icon" href="images/logo (2).png" />
+    <title>Product Warranty - PC Centre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.js"
-      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-      crossorigin="anonymous"
-    ></script>
-    <style></style>
+    <style>
+      .warranty-header {
+        background: linear-gradient(to right, #0047ab, #002f6c);
+        color: white;
+        padding: 60px 0;
+        text-align: center;
+      }
+
+      .warranty-card {
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        padding: 25px;
+        background: #fff;
+      }
+
+      .warranty-card i {
+        font-size: 35px;
+        color: #0047ab;
+      }
+
+      .hei{
+        height: 240px;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!-- header -->
@@ -113,70 +131,55 @@
         </div>
       </div>
     </nav>
-    <!-- --------------------add to cart picture------------------- -->
-    <div class="container1" style="background-color: white">
-      <!-- Left Side Image -->
-      <div class="product-img">
-        <img src="images/acer laptop.jpg" alt="pic" id="productImage" />
+
+    <div class="warranty-header">
+      <h1>Product Warranty</h1>
+      <p>Complete warranty information for your peace of mind</p>
+    </div>
+
+    <div class="container my-5">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="warranty-card text-center">
+            <i class="bi bi-shield-check"></i>
+            <h5 class="mt-3">Official Warranty</h5>
+            <p>
+              All products come with official manufacturer warranty ranging from
+              <b>1 year to 3 years</b>.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="warranty-card text-center hei">
+            <i class="bi bi-arrow-repeat"></i>
+            <h5 class="mt-3">Easy Replacement</h5>
+            <p>
+              Any manufacturing defect within <b>7 days</b> is eligible for
+              replacement.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="warranty-card text-center hei">
+            <i class="bi bi-headset"></i>
+            <h5 class="mt-3">Customer Support</h5>
+            <p>
+              Our support team will help you with warranty claims and guidance.
+            </p>
+          </div>
+        </div>
       </div>
 
-      <!-- Right Side Details -->
-      <div class="addtocart" style="margin-top: 30px">
-        <h3 id="companyName">Acer</h3>
-        <p class="product-title" id="productTitle">
-          Acer Aspire 5 Business Laptop
-        </p>
-
-        <p id="rating">⭐⭐⭐⭐☆ 4.4 (521 reviews)</p>
-
-        <p class="price" id="price">$649.99</p>
-        <p class="stock">✅ In Stock</p>
-
-        <h5>Key Features</h5>
-        <ul class="features" id="featuresList">
-          <li>15.6" Full HD IPS Display</li>
-          <li>Intel Core i5-1235U</li>
-          <li>8GB DDR4 RAM</li>
-          <li>512GB NVMe SSD</li>
-          <li>Backlit Keyboard</li>
+      <div class="mt-5">
+        <h4>Warranty Terms & Conditions</h4>
+        <ul>
+          <li>Physical or water damage is not covered.</li>
+          <li>Warranty card or invoice is mandatory.</li>
+          <li>Software issues are not included.</li>
+          <li>Warranty handled by authorized service centers.</li>
         </ul>
-
-        <!-- Quantity + Add To Cart Same Line -->
-        <div class="cart-row">
-          <input type="number" value="1" min="1" />
-          <button class="cart-btn">Add To Cart</button>
-        </div>
-        <br />
-
-        <div class="secondary-actions">
-          <button class="add-to-wishlist-btn">🤍 Add to Wishlist</button>
-          <button class="share-btn">🔗 Share</button>
-        </div>
-
-        <hr class="mini-line" />
-
-        <div class="service-features">
-          <div class="feature-item">
-            <a href="fast_delivery.html" class="text-decoration-none">
-              <div class="feature-icon">🚚</div>
-            </a>
-            <p>Fast Delivery</p>
-          </div>
-
-          <div class="feature-item">
-            <a href="warranty.html" class="text-decoration-none text-black">
-              <div class="feature-icon">🛡️</div>
-            </a>
-            <p>Warranty</p>
-          </div>
-
-          <div class="feature-item">
-            <a href="support.html" class="text-decoration-none">
-            <div class="feature-icon">🎧</div>
-            </a>
-            <p>Support</p>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -232,7 +235,7 @@
         </p>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
