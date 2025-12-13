@@ -578,3 +578,46 @@ color: #0047AB;
   height: 2px;
   background-color: white;
 }
+.info-section{
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+}
+.info-box{
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 400px;
+  height: 100px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.info-box:hover{
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.info-box h6{
+  color: #007bff;
+  font-size: 24px;
+  margin-top: 20px;
+}
+.info-box p{
+  color: #555;
+  margin-top: 5px;
+  font-size: 14px;
+}
+.row{
+  padding-left: 40px;
+}
+.head{
+ background-color: #084298;
+  color: white;
+  padding-left: 30px;
+ }
+ .head h6{
+  padding-top: 30px;
+  padding-bottom: 30px;
+ }
+ .head p{
+  padding-bottom: 70px;
+ }
