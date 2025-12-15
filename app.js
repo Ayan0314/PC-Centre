@@ -45,16 +45,31 @@
   });
 
 
-//   nabra links underline code
-$(document).ready(function () {
-
-
-  $(".nav-link-custom").each(function () {
-    let linkPage = $(this).attr("href");
-
-    if (linkPage === currentPage) {
-      $(this).addClass("active");
-    }
+// Form jQuery
+$(".iinput").focus(function () {
+    $(this).css({
+      "border": "2px solid blue",
+      "background-color": "#eef"
+    });
   });
 
-});
+  $(".iinput").blur(function () {
+    $(this).css({
+      "border": "1px solid #ccc",
+      "background-color": "white"
+    });
+  });
+
+$(document).ready(function(){
+  $(".iinput").blur(function(){
+    if ($(this).val().trim() === ""){
+      $(this).css(
+        "border", "2px solid red",
+      )
+    }else{
+      $(this).css(
+        "border", "2px solid green",
+      )
+    }
+  })
+})
