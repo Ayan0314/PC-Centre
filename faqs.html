@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Centre</title>
+     <link rel="icon" href="images/logo (2).png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+        .support-hero {
+        background: linear-gradient(to right, #0047ab, #002f6c);
+        color: white;
+        padding: 70px 20px;
+        text-align: center;
+      }
+
+      .support-box {
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+        height: 100%;
+      }
+
+      .support-box:hover {
+        transform: translateY(-5px);
+      }
+
+      .support-box i {
+        font-size: 40px;
+        color: #0047ab;
+      }
+    </style>
+</head>
+<body>
+     <!-- header -->
+    <div
+      class="container-fluid bg-dark text-white py-2 px-4 d-flex justify-content-between align-items-center"
+    >
+      <div>
+        <i class="bi bi-telephone"></i>
+        <span>Support: +1 (555) 123-4567</span>
+      </div>
+      <div>
+        <i class="bi bi-clock"></i>
+        <span>Mon-Sat: 9:00 AM - 8:00 PM</span>
+      </div>
+    </div>
+
+    <nav
+      class="nab navbar navbar-expand-lg sticky-top shadow"
+      style="background-color: #0047ab"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">
+          <img
+            src="images/logo (2).png"
+            alt="logo"
+            style="height: 50px; width: 50px"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler text-white border-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0"
+            style="padding-left: 300px"
+          >
+            <li class="nav-item">
+              <a class="nav-link  text-white nav-link-custom" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white nav-link-custom" href="product.html">Products</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white nav-link-custom active" href="faqs.html">Help & FAQs</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white nav-link-custom" href="Contact.html">Contact Us</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Company Catalogs
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Dell.html">Dell</a></li>
+                <li><a class="dropdown-item" href="#">Acer</a></li>
+                <li><a class="dropdown-item" href="#">Toshiba</a></li>
+                <li><a class="dropdown-item" href="#">HP</a></li>
+                <li><a class="dropdown-item" href="#">ASUS</a></li>
+                <li><a class="dropdown-item" href="#">Lenovo</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-3 me-3">
+            <i class="bi bi-search text-white h5 m-0"></i>
+
+            <div class="position-relative">
+              <i class="bi bi-cart text-white h5 m-0"></i>
+              <span
+                class="badge bg-danger position-absolute top-0 start-100 translate-middle px-2"
+                >0</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="support-hero">
+      <h1 class="fw-bold">Help & Support</h1>
+      <p class="mt-2">Get assistance from our qualified Technical Support and Customer Service Advisors. We're here to help with any questions or issues.</p>
+    </section>
+  </div>
+  <div class="container my-5">
+    <h4 class="mb-4">Technical Support Centers</h4>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card p-3 shadow-sm">
+          <h6 class="text-primary">PC-Centre Main Branch</h6>
+          <p class="mb-1">📍 123 Tech Street, Downtown</p>
+          <p class="mb-1">📞 +1 (555) 123-4567</p>
+          <p class="mb-1">✉️ support@pccentre.com</p>
+          <p class="mb-0">⏰ Mon-Sat: 9AM - 8PM<br>Sun: 10AM - 6PM</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3 shadow-sm">
+          <h6 class="text-primary">PC-Centre North Service Center</h6>
+          <p class="mb-1">📍 456 Innovation Ave, North District</p>
+          <p class="mb-1">📞 +1 (555) 234-5678</p>
+          <p class="mb-1">✉️ north@pccentre.com</p>
+          <p class="mb-0">⏰ Mon-Sat: 10AM - 7PM<br>Sun: Closed</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-3 shadow-sm">
+          <h6 class="text-primary">PC-Centre South Service Center</h6>
+          <p class="mb-1">📍 789 Computer Lane, South District</p>
+          <p class="mb-1">📞 +1 (555) 345-6789</p>
+          <p class="mb-1">✉️ south@pccentre.com</p>
+          <p class="mb-0">⏰ Mon-Sat: 9AM - 7PM<br>Sun: 10AM - 4PM</p>
+        </div>
+      </div>
+    </div>
+    <div class="help-box text-center">
+      <h5 class="mb-4">How Can We Help You?</h5>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-4 shadow-sm">
+            <h6>Call Us</h6>
+            <p class="mb-1">Talk to our support team</p>
+            <p class="text-primary">+1 (555) 123-4567</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 shadow-sm">
+            <h6>Email Us</h6>
+            <p class="mb-1">Send your questions anytime</p>
+            <p class="text-primary">support@pccentre.com</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 shadow-sm">
+            <h6>Visit Us</h6>
+            <p class="mb-1">Come to our service centers</p>
+            <p class="text-primary">3 Locations Available</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5">
+      <h4 class="mb-3">Frequently Asked Questions</h4>
+      <details class="card p-3 mb-2">
+        <summary class="fw-bold"> What is your return policy?</summary>
+        <p class="mt-2 mb-0">We offer a 30-day return policy on most products. Items must be in original condition with all packaging and accessories. Please contact our customer service team to initiate a return.</p>
+      </details>
+
+      <details class="card p-3 mb-2">
+        <summary class="fw-bold"> Do you provide warranty on products?</summary>
+        <p class="mt-2 mb-0">Yes, all products come with manufacturer warranty. Additionally, we offer extended warranty options at the time of purchase for extra protection.</p>
+      </details>
+
+      <details class="card p-3 mb-2">
+        <summary class="fw-bold">How long does delivery take?</summary>
+        <p class="mt-2 mb-0">Standard delivery takes 3-5 business days within the city. Express delivery is available for next-day delivery on selected items.</p>
+      </details>
+
+      <details class="card p-3 mb-2">
+        <summary class="fw-bold"> Do you offer installation services?</summary>
+        <p class="mt-2 mb-0">Yes, we provide professional installation services for desktops, networking equipment, and enterprise solutions. Home installation is available for consumers, and on-site installation for businesses.</p>
+      </details>
+
+      <details class="card p-3 mb-2">
+        <summary class="fw-bold">What payment method do you accept?</summary>
+        <p class="mt-2 mb-0">We accept all major credit cards, debit cards, net banking, UPI, and cash on delivery for orders under $500.</p>
+      </details>
+
+      <details class="card p-3 mb-2">
+        <summary class="fw-bold">Can I upgrade components in my existing computer?</summary>
+        <p class="mt-2 mb-0">Absolutely! Our technical team can help you choose compatible upgrades and perform the installation. Bring your PC to our service center or schedule a home visit.</p>
+      </details>
+
+       <details class="card p-3 mb-2">
+        <summary class="fw-bold">Do you provide technical support after purchase?</summary>
+        <p class="mt-2 mb-0">Yes, we have a dedicated team of Technical Support Advisors available via phone, email, and in-person at our service centers. Support is included for all products purchased from PC-Centre.</p>
+      </details>
+
+       <details class="card p-3 mb-2">
+        <summary class="fw-bold">Are refurbished products available?</summary>
+        <p class="mt-2 mb-0">Yes, we offer certified refurbished products at discounted prices. All refurbished items are thoroughly tested and come with a 90-day warranty.</p>
+      </details>
+
+    </div>
+    <div class="mt-5 p-4 text-white" style="background:#1e3a8a;border-radius:15px;">
+      <h5>Still Need Help?</h5>
+      <p>Our dedicated team of Technical Support and Customer Service Advisors is ready to assist you with any product inquiries, technical issues, or service requests. We aim to exceed your expectations with superior after-sales support.</p>
+      <div class="row">
+        <div class="col-md-6">
+          <h6>Support Services Include:</h6>
+          <ul>
+            <li>Product recommendations  and compatibility checks</li>
+            <li>Technical troubleshooting and diagnostics</li>
+            <li>Installation and setup assistance</li>
+            <li>Warranty & returns processing</li>
+            <li>Enterprise solution consultations</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h6>Response Time:</h6>
+          <ul>
+            <li>Phone support: Immediate</li>
+            <li>Email support: Within 24 hours</li>
+            <li>On-site visit: 2-3 days</li>
+            <li>Emergency support: Same day</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+     <!-- Footer -->
+    <footer class="container-fluid bg-dark text-white pt-4">
+      <div class="row px-4">
+        <div class="col-md-3 mb-3">
+          <h5>PC Centre</h5>
+          <p>
+            Your trusted IT solutions partner with over 2 years of experience
+            and 1,000+ products from leading manufacturers.
+          </p>
+          <i class="bi bi-facebook me-2 hovee"></i>
+          <i class="bi bi-twitter me-2 hovee"></i>
+          <i class="bi bi-instagram me-2 hovee"></i>
+          <i class="bi bi-linkedin hovee"></i>
+        </div>
+
+        <div class="col-md-3 mb-3" style="padding-left: 90px">
+          <h5>Quick Links</h5>
+          <p class="hovee">Home</p>
+          <p class="hovee">Products</p>
+          <p class="hovee">Help & Support</p>
+          <p class="hovee">About Us</p>
+          <a href="Contact.html" style="text-decoration: none; color: white">
+            <p class="hovee">Contact</p>
+            </a>
+        </div>
+
+        <div class="col-md-3 mb-3" style="padding-left: 90px">
+          <h5>Categories</h5>
+          <p class="hovee">Notebooks</p>
+          <p class="hovee">Displays</p>
+          <p class="hovee">Storage</p>
+          <p class="hovee">Printers</p>
+          <p class="hovee">Accessories</p>
+        </div>
+
+        <div class="col-md-3 mb-3" style="padding-left: 90px">
+          <h5>Contact Us</h5>
+          <p><i class="bi bi-geo-alt"></i> 123 Tech Street, Karachi</p>
+          <p><i class="bi bi-telephone"></i> +1 (555) 123-4567</p>
+          <p><i class="bi bi-envelope"></i> support@pccentre.com</p>
+        </div>
+      </div>
+
+      <hr class="container" />
+
+      <div class="text-center pb-3">
+        <p class="mb-0">
+          © 2025 PC Centre. All rights reserved. | Privacy Policy | Terms of
+          Service
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

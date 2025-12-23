@@ -63,13 +63,10 @@ $(".iinput").focus(function () {
 $(document).ready(function(){
   $(".iinput").blur(function(){
     if ($(this).val().trim() === ""){
-      $(this).css(
-        "border", "2px solid red",
-      )
+      $(this).css("border", "2px solid red",)
     }else{
-      $(this).css(
-        "border", "2px solid green",
-      )
+      $(this).css("border", "2px solid green",)
     }
   })
 })
+

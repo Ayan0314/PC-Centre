@@ -19,7 +19,41 @@
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"
     ></script>
-    <style></style>
+    <style>
+.product-card {
+  border-radius: 18px;
+  background: #ffffff;
+}
+
+.quantity-box {
+  max-width: 100px;
+}
+
+
+.feature-list li {
+  margin-bottom: 10px;
+}
+
+
+.service-icons div {
+  transition: transform 0.3s ease;
+}
+
+.service-icons div:hover {
+  transform: translateY(-6px);
+}
+
+.big-product-img {
+  object-fit: contain;        /* image distort nahi hogi */
+  image-rendering: auto;      /* browser ko best quality render ka hint */
+  image-rendering: crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+
+
+
+    </style>
   </head>
   <body>
     <!-- header -->
@@ -72,7 +106,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link text-white nav-link-custom" href="#">Help & FAQs</a>
+              <a class="nav-link text-white nav-link-custom" href="faqs.html">Help & FAQs</a>
             </li>
 
             <li class="nav-item">
@@ -113,72 +147,105 @@
         </div>
       </div>
     </nav>
-    <!-- --------------------add to cart picture------------------- -->
-    <div class="container1" style="background-color: white">
-      <!-- Left Side Image -->
-      <div class="product-img">
-        <img src="images/acer laptop.jpg" alt="pic" id="productImage" />
+    <!--  PRODUCT Details  -->
+<div class="container my-5">
+  <div class="card product-card shadow-lg border-0">
+    <div class="row g-0 align-items-center">
+
+      <!-- BIG Product Image -->
+      <div class="col-lg-6 p-4 text-center">
+        <img
+          src="images/acer laptop.jpg"
+          class="img-fluid big-product-img"
+          alt="Acer Laptop"
+          style="height: 500px; width: 400px;"
+        />
       </div>
 
-      <!-- Right Side Details -->
-      <div class="addtocart" style="margin-top: 30px">
-        <h3 id="companyName">Acer</h3>
-        <p class="product-title" id="productTitle">
+      
+      <div class="col-lg-6 p-4">
+        <span class="badge bg-primary mb-2">Acer</span>
+
+        <h2 class="fw-bold mt-2">
           Acer Aspire 5 Business Laptop
+        </h2>
+
+        <p class="text-warning mb-1 fs-5">
+          ⭐⭐⭐⭐☆ <span class="text-muted fs-6">(521 reviews)</span>
         </p>
 
-        <p id="rating">⭐⭐⭐⭐☆ 4.4 (521 reviews)</p>
+        <h3 class="text-success fw-bold my-3">$649.99</h3>
 
-        <p class="price" id="price">$649.99</p>
-        <p class="stock">✅ In Stock</p>
+        <p class="text-success fw-semibold">
+          ✔ In Stock
+        </p>
 
-        <h5>Key Features</h5>
-        <ul class="features" id="featuresList">
-          <li>15.6" Full HD IPS Display</li>
-          <li>Intel Core i5-1235U</li>
-          <li>8GB DDR4 RAM</li>
-          <li>512GB NVMe SSD</li>
-          <li>Backlit Keyboard</li>
+        <hr />
+
+        <h5 class="fw-bold mb-3">Key Features</h5>
+        <ul class="list-unstyled fs-6 feature-list">
+          <li>✔ 15.6" Full HD IPS Display</li>
+          <li>✔ Intel Core i5-1235U</li>
+          <li>✔ 8GB DDR4 RAM</li>
+          <li>✔ 512GB NVMe SSD</li>
+          <li>✔ Backlit Keyboard</li>
         </ul>
 
-        <!-- Quantity + Add To Cart Same Line -->
-        <div class="cart-row">
-          <input type="number" value="1" min="1" />
-          <button class="cart-btn">Add To Cart</button>
+        
+        <div class="d-flex align-items-center gap-3 my-4">
+          <input
+            type="number"
+            value="1"
+            min="1"
+            class="form-control quantity-box"
+          />
+
+          <button class="btn btn-primary btn-lg px-4">
+            <i class="bi bi-cart"></i> Add To Cart
+          </button>
         </div>
-        <br />
 
-        <div class="secondary-actions">
-          <button class="add-to-wishlist-btn">🤍 Add to Wishlist</button>
-          <button class="share-btn">🔗 Share</button>
+        
+        <div class="d-flex gap-3">
+          <button class="btn btn-outline-danger">
+            🤍 Wishlist
+          </button>
+          <button class="btn btn-outline-secondary">
+            🔗 Share
+          </button>
         </div>
 
-        <hr class="mini-line" />
+        <hr />
 
-        <div class="service-features">
-          <div class="feature-item">
-            <a href="fast_delivery.html" class="text-decoration-none">
-              <div class="feature-icon">🚚</div>
+        
+        <div class="row text-center mt-4 service-icons">
+          <div class="col-4">
+            <a href="fast_delivery.html" class="text-decoration-none text-dark">
+              <h2>🚚</h2>
+              <p>Fast Delivery</p>
             </a>
-            <p>Fast Delivery</p>
           </div>
 
-          <div class="feature-item">
-            <a href="warranty.html" class="text-decoration-none text-black">
-              <div class="feature-icon">🛡️</div>
+          <div class="col-4">
+            <a href="warranty.html" class="text-decoration-none text-dark">
+              <h2>🛡️</h2>
+              <p>Warranty</p>
             </a>
-            <p>Warranty</p>
           </div>
 
-          <div class="feature-item">
-            <a href="support.html" class="text-decoration-none">
-            <div class="feature-icon">🎧</div>
+          <div class="col-4">
+            <a href="support.html" class="text-decoration-none text-dark">
+              <h2>🎧</h2>
+              <p>Support</p>
             </a>
-            <p>Support</p>
           </div>
         </div>
+
       </div>
     </div>
+  </div>
+</div>
+
 
     <!-- Footer -->
     <footer class="container-fluid bg-dark text-white pt-4">
