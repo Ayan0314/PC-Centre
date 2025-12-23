@@ -55,9 +55,9 @@
   margin-top: 5px;
   font-size: 14px;
 }
-.row{
-  padding-left: 40px;
-}
+/* .row{
+  padding-left: 10px;
+} */
  .ssss {
    background-color: #fff;
    border: 1px solid #ddd;
@@ -91,6 +91,32 @@
  p {
    padding-left: 35px;
    padding-top: 20px;
+ }
+ .container {
+   width: 100%;
+   max-width: 900px;
+   padding: 24px;
+ }
+
+ .card {
+   background: #ffffff;
+   border-radius: 12px;
+   border: 1px solid #e5e7eb;
+   padding: 48px 24px;
+   text-align: center;
+ }
+
+ .icon {
+   width: 56px;
+   height: 56px;
+   margin: 0 auto 16px;
+   border-radius: 50%;
+   background: #f1f3f5;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 26px;
+   color: gray;
  }
     </style>
   </head>
@@ -205,7 +231,7 @@
 
     <!-- ------------------info section------------ -->
     <div class="head">
-      <h6>Dell Product Catalog</h6>
+      <h6>Toshiba Product Catalog</h6>
       <p>
         Browse our complete selection of Dell products. All items come with
         manufacturer Warranty and our dedicated support.
@@ -214,11 +240,11 @@
 
     <div class="info-section">
       <div class="info-box">
-        <h6>2</h6>
+        <h6>0</h6>
         <p>Products Available</p>
       </div>
       <div class="info-box">
-        <h6>2</h6>
+        <h6>0</h6>
         <p>Product Categories</p>
       </div>
       <div class="info-box">
@@ -227,38 +253,15 @@
       </div>
     </div>
     <!-- -----------------card------------------------- -->
-    <div class="row">
-      <h5>Display</h5>
-      <div class="col-md-4 acercard">
-        <div class="card2" style="width: 18rem">
-          <img
-            src="images/Dell ultra sharp.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Dell</h5>
-            <p class="card-text">Dell UltraSharp 27" 4K Monitor</p>
-            <span>⭐⭐⭐⭐ (234)</span><br />
-            <del>699.99</del>
-            <span>$549.99</span>
-          </div>
+    <div class="container">
+        <div class="card">
+            <div class="icon">📦</div>
+            <h1>No Products Available</h1>
+            <p>We currently dont have any Toshiba products in stock.</p>
+            <a href="#">Browse all products</a>
         </div>
-      </div>
-
-      <h5>Notebook</h5>
-      <div class="col-md-4 acercard">
-        <div class="card2" style="width: 18rem">
-          <img src="images/Dell XPS 15.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Dell</h5>
-            <p class="card-text">Dell XPS 15 Laptop</p>
-            <span>⭐⭐⭐⭐ (289)</span>
-            <p>$1899.99</p>
-          </div>
-        </div>
-      </div>
     </div>
+    
 
     <!-- ----------------------------------------------- -->
   <div class="box112233">
