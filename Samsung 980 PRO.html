@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PC Centre</title>
+    <link rel="icon" href="images/logo (2).png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+.product-card {
+  border-radius: 18px;
+  background: #ffffff;
+}
+
+.quantity-box {
+  max-width: 100px;
+}
+
+
+.feature-list li {
+  margin-bottom: 10px;
+}
+
+
+.service-icons div {
+  transition: transform 0.3s ease;
+}
+
+.service-icons div:hover {
+  transform: translateY(-6px);
+}
+
+.big-product-img {
+  object-fit: contain;        /* image distort nahi hogi */
+  image-rendering: auto;      /* browser ko best quality render ka hint */
+  image-rendering: crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <div
+      class="container-fluid bg-dark text-white py-2 px-4 d-flex justify-content-between align-items-center"
+    >
+      <div>
+        <i class="bi bi-telephone"></i>
+        <span>Support: +1 (555) 123-4567</span>
+      </div>
+      <div>
+        <i class="bi bi-clock"></i>
+        <span>Mon-Sat: 9:00 AM - 8:00 PM</span>
+      </div>
+    </div>
+
+    <nav
+      class="nab navbar navbar-expand-lg sticky-top shadow"
+      style="background-color: #0047ab"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">
+          <img
+            src="images/logo (2).png"
+            alt="logo"
+            style="height: 50px; width: 50px"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler text-white border-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0"
+            style="padding-left: 300px"
+          >
+            <li class="nav-item">
+              <a class="nav-link active text-white nav-link-custom" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white nav-link-custom" href="product.html">Products</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white nav-link-custom" href="faqs.html">Help & FAQs</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white nav-link-custom" href="Contact.html">Contact Us</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Company Catalogs
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Dell.html">Dell</a></li>
+                <li><a class="dropdown-item" href="acer.html">Acer</a></li>
+                <li><a class="dropdown-item" href="Toshiba.html">Toshiba</a></li>
+                <li><a class="dropdown-item" href="Hp.html">HP</a></li>
+                <li><a class="dropdown-item" href="Asus.html">ASUS</a></li>
+                <li><a class="dropdown-item" href="lenovo.html">Lenovo</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-3 me-3">
+            <i class="bi bi-search text-white h5 m-0"></i>
+
+            <div class="position-relative">
+              <i class="bi bi-cart text-white h5 m-0"></i>
+              <span
+                class="badge bg-danger position-absolute top-0 start-100 translate-middle px-2"
+                >0</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--  PRODUCT Details  -->
+<div class="container my-5">
+  <div class="card product-card shadow-lg border-0">
+    <div class="row g-0 align-items-center">
+
+      <!-- BIG Product Image -->
+      <div class="col-lg-6 p-4 text-center">
+        <img
+          src="images/h2.jpg"
+          class="img-fluid big-product-img"
+          alt="Zephyrus G14 gaming laptop"
+          style="height: 500px; width: 400px;"
+        />
+      </div>
+
+      
+      <div class="col-lg-6 p-4">
+        <span class="badge bg-primary mb-2">Samsung</span>
+
+        <h2 class="fw-bold mt-2">
+          Samsung 980 PRO 2TB NVMe SSD
+        </h2>
+
+        <p class="text-warning mb-1 fs-5">
+          ⭐⭐⭐⭐☆ <span class="text-muted fs-6">4.9 (1234 reviews)</span>
+        </p>
+
+        <del>$249.99</del>
+        <h3 class="text-success fw-bold my-3">$199.99</h3>
+
+        <p class="text-success fw-semibold">
+          ✔ In Stock
+        </p>
+
+        <hr />
+
+        <h5 class="fw-bold mb-3">Key Features</h5>
+        <ul class="list-unstyled fs-6 feature-list">
+          <li>✔ 2TB storage capacity</li>
+          <li>✔ PCIe 4.0 interface</li>
+          <li>✔ Read speeds up to 7,000 MB/s</li>
+          <li>✔ Write speeds up to 5,100 MB/s</li>
+          <li>✔ 5-year limited warranty</li>
+        </ul>
+
+        
+        <div class="d-flex align-items-center gap-3 my-4">
+          <input
+            type="number"
+            value="1"
+            min="1"
+            class="form-control quantity-box"
+          />
+
+          <button class="btn btn-primary btn-lg px-4">
+            <i class="bi bi-cart"></i> Add To Cart
+          </button>
+        </div>
+
+        
+        <div class="d-flex gap-3">
+          <button class="btn btn-outline-danger">
+            🤍 Wishlist
+          </button>
+          <button class="btn btn-outline-secondary">
+            🔗 Share
+          </button>
+        </div>
+
+        <hr />
+
+        
+        <div class="row text-center mt-4 service-icons">
+          <div class="col-4">
+            <a href="fast_delivery.html" class="text-decoration-none text-dark">
+              <h2>🚚</h2>
+              <p>Fast Delivery</p>
+            </a>
+          </div>
+
+          <div class="col-4">
+            <a href="warranty.html" class="text-decoration-none text-dark">
+              <h2>🛡️</h2>
+              <p>Warranty</p>
+            </a>
+          </div>
+
+          <div class="col-4">
+            <a href="support.html" class="text-decoration-none text-dark">
+              <h2>🎧</h2>
+              <p>Support</p>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark text-white pt-4">
+      <div class="row px-4">
+        <div class="col-md-3 mb-3">
+          <h5>PC Centre</h5>
+          <p>
+            Your trusted IT solutions partner with over 2 years of experience
+            and 1,000+ products from leading manufacturers.
+          </p>
+          <i class="bi bi-facebook me-2 hovee"></i>
+          <i class="bi bi-twitter me-2 hovee"></i>
+          <i class="bi bi-instagram me-2 hovee"></i>
+          <i class="bi bi-linkedin hovee"></i>
+        </div>
+
+        <div class="col-md-3 mb-3" style="padding-left: 90px">
+          <h5>Quick Links</h5>
+          <p class="hovee">Home</p>
+          <p class="hovee">Products</p>
+          <p class="hovee">Help & Support</p>
+          <p class="hovee">About Us</p>
+          <a href="Contact.html" style="text-decoration: none; color: white">
+            <p class="hovee">Contact</p>
+            </a>
+        </div>
+
+        <div class="col-md-3 mb-3" style="padding-left: 90px">
+          <h5>Categories</h5>
+          <p class="hovee">Notebooks</p>
+          <p class="hovee">Displays</p>
+          <p class="hovee">Storage</p>
+          <p class="hovee">Printers</p>
+          <p class="hovee">Accessories</p>
+        </div>
+
+        <div class="col-md-3 mb-3" style="padding-left: 90px">
+          <h5>Contact Us</h5>
+          <p><i class="bi bi-geo-alt"></i> 123 Tech Street, Karachi</p>
+          <p><i class="bi bi-telephone"></i> +1 (555) 123-4567</p>
+          <p><i class="bi bi-envelope"></i> support@pccentre.com</p>
+        </div>
+      </div>
+
+      <hr class="container" />
+
+      <div class="text-center pb-3">
+        <p class="mb-0">
+          © 2025 PC Centre. All rights reserved. | Privacy Policy | Terms of
+          Service
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script></script>
+  </body>
+</html>
