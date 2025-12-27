@@ -18,6 +18,37 @@
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"
     ></script>
+    <link rel="icon" href="images/logo (5).png">
+    <style>
+      .ik:hover {
+        color:#0047ab;
+        /* box-shadow: 0 0 15px rgba(56,189,248,0.6); */
+        transition: all 0.3s ease;
+        transform: scale(1.2);
+        }
+
+        /* Hover Dropdown */
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+/* Smooth animation */
+.dropdown-menu {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+    </style>
   </head>
   <body>
     <!-- header -->
@@ -36,14 +67,14 @@
 
     <nav
       class="nab navbar navbar-expand-lg sticky-top shadow"
-      style="background-color: #0047ab"
+      style="background:linear-gradient(135deg,#000428,#004e92);"
     >
       <div class="container-fluid">
-        <a class="navbar-brand text-white" href="#">
+        <a class="navbar-brand text-white" href="index.html">
           <img
-            src="images/logo (2).png"
+            src="images/logo (5).png"
             alt="logo"
-            style="height: 50px; width: 50px"
+            style="height: 55px; width: 60px"
           />
         </a>
 
@@ -59,10 +90,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul
             class="navbar-nav me-auto mb-2 mb-lg-0"
-            style="padding-left: 300px"
+            style="padding-left: 250px"
           >
             <li class="nav-item">
               <a class="nav-link text-white nav-link-custom" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link  text-white nav-link-custom" href="About.html">About Us</a>
             </li>
 
             <li class="nav-item">
@@ -74,7 +109,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link text-white active nav-link-custom" href="Contact.html">Contact Us</a>
+              <a class="nav-link text-white nav-link-custom active" href="Contact.html">Contact Us</a>
             </li>
 
             <li class="nav-item dropdown">
@@ -98,7 +133,7 @@
           </ul>
 
           <div class="d-flex align-items-center gap-3 me-3">
-            <i class="bi bi-search text-white h5 m-0"></i>
+            <i class="bi bi-search text-white h5 m-0 ik"></i>
 
             <div class="position-relative">
               <i class="bi bi-cart text-white h5 m-0"></i>
@@ -197,11 +232,16 @@
         </div>
       </div>
     </div>
-    <!-- Footer -->
-    <footer class="container-fluid bg-dark text-white pt-4">
+    <footer class="container-fluid text-white pt-4" style="background:linear-gradient(135deg,#000428,#004e92);">
       <div class="row px-4">
         <div class="col-md-3 mb-3">
-          <h5>PC Centre</h5>
+          <a href="index.html">
+          <img
+            src="images/logo (5).png"
+            alt="logo"
+            style="height: 55px; width: 60px; margin-bottom: 10px"
+          />
+          </a>
           <p>
             Your trusted IT solutions partner with over 2 years of experience
             and 1,000+ products from leading manufacturers.
@@ -214,10 +254,18 @@
 
         <div class="col-md-3 mb-3" style="padding-left: 90px">
           <h5>Quick Links</h5>
+          <a href="index.html" style="text-decoration: none; color: white">
           <p class="hovee">Home</p>
+          </a>
+          <a href="product.html" style="text-decoration: none; color: white">
           <p class="hovee">Products</p>
+          </a>
+          <a href="faqs.html" style="text-decoration: none; color: white">
           <p class="hovee">Help & Support</p>
-          <p class="hovee">About Us</p>
+          </a>
+          <a href="About.html" style="text-decoration: none; color: white">
+            <p class="hovee">About Us</p>
+          </a>
           <a href="Contact.html" style="text-decoration: none; color: white">
             <p class="hovee">Contact</p>
             </a>
