@@ -216,13 +216,14 @@
             </li>
           </ul>
 
-          <div class="d-flex align-items-center gap-3 me-3">
+                   <div class="d-flex align-items-center gap-3 me-3">
             <i class="bi bi-search text-white h5 m-0 ik"></i>
 
             <div class="position-relative">
-              <i class="bi bi-cart text-white h5 m-0"></i>
+              <i class="bi bi-cart text-white h5 m-0" id="cartIcon"></i>
               <span
                 class="badge bg-danger position-absolute top-0 start-100 translate-middle px-2"
+                id="cartCount"
                 >0</span
               >
             </div>
@@ -230,7 +231,21 @@
         </div>
       </div>
     </nav>
-    <!-- ---------------------categories-------------------------- -->
+   
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartCanvas">
+  <div class="offcanvas-header">
+    <h5>Your Cart</h5>
+    <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul id="cartItems" class="list-group mb-3"></ul>
+    <div class="fw-bold">Total: $<span id="cartTotal">0.00</span></div>
+  </div>
+</div>
+        </div>
+      </div>
+    </nav>
+    
     <div
       class="categories align-items-center"
       style="float: left; width: 250px; padding-right: 20px;"
@@ -251,7 +266,7 @@
         <li class="list-group-item">Accessories</li>
       </ul>
       <hr />
-      <!----------------------- Price Range Dropdown --------------------->
+      
       <p>Price Range</p>
       <select class="form-select mb-3">
         <option selected>All Prices</option>
@@ -261,9 +276,9 @@
         <option>$1,000 - $2,000</option>
         <option>Over $2,000</option>
       </select>
-      <!----------------- Separator line AFTER Price Range --------------->
+      
       <hr />
-      <!------------------------ Brand Dropdown ----------------------->
+      
       <p>Brand</p>
       <select class="form-select mb-4">
         <option selected>All Brand</option>
@@ -279,7 +294,7 @@
         <option>APC</option>
       </select>
     </div>
-    <!-- ---------------------product found-------------------------------- -->
+    
     <div class="product-toolbar">
       <div class="products-count">12 products found</div>
       <div class="toolbar-right">
@@ -294,7 +309,7 @@
         <button class="view-btn" title="List view">&#9776;</button>
       </div>
     </div>
-    <!-- -----------------card------------------------- -->
+    
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-4 cards">
@@ -317,18 +332,24 @@
               <p class="card-text">APC Back-UPS Pro 1500VA</p>
               <span>⭐⭐⭐⭐ (1876)</span>
               <p>$249.99</p>
+              <a href="APC Back-UPS.html" class="stretched-link"></a>
             </div>
           </div>
         </div>
         <div class="col-md-4 cards">
           <div class="card" style="width: 18rem">
-            <img src="images/Asus Rog.jpg" class="card-img-top" alt="..." />
+            <img src="images/h3.jpg" class="card-img-top" alt="..." />
+            <span
+              class="badge bg-danger"
+              style="position: absolute; top: 15px; left: 200px; width: 60px;"
+              >Sale</span>
             <div class="card-body">
               <h5 class="card-title">ASUS</h5>
               <p class="card-text">ASUS ROG Strix Z790-E Gaming WiFi</p>
               <span>⭐⭐⭐⭐ (156)</span><br />
               <del>$529.99</del>
               <span>$449.99</span>
+              <a href="ASUS ROG Strix Z790-E.html" class="stretched-link"></a>
             </div>
           </div>
         </div>
@@ -344,16 +365,21 @@
               <p class="card-text">ASUS ROG Swift 34" Curved Gaming...</p>
               <span>⭐⭐⭐⭐ (187)</span>
               <p>$899.99</p>
+              <a href="ASUS ROG Swift 34.html" class="stretched-link"></a>
             </div>
           </div>
         </div>
         <div class="col-md-4 cards">
           <div class="card" style="width: 18rem">
             <img
-              src="images/Zephyrus G14 gaming laptop.jpg"
+              src="images/h4.jpg"
               class="card-img-top"
               alt="..."
             />
+            <span
+              class="badge bg-danger"
+              style="position: absolute; top: 15px; left: 200px; width: 60px;"
+              >Sale</span>
             <div class="card-body">
               <h5 class="card-title">ASUS</h5>
               <p class="card-text">
@@ -362,6 +388,7 @@
               <span>⭐⭐⭐⭐ (341)</span><br />
               <del>1899.99</del>
               <span>$1649.99</span>
+              <a href="ASUS ROG Zephyrus.html" class="stretched-link"></a>
             </div>
           </div>
         </div>
@@ -372,12 +399,17 @@
               class="card-img-top"
               alt="..."
             />
+            <span
+              class="badge bg-danger"
+              style="position: absolute; top: 15px; left: 200px; width: 60px;"
+              >Sale</span> 
             <div class="card-body">
               <h5 class="card-title">Corsair</h5>
               <p class="card-text">Corsair K95 RGB Platinum Mechhaniica...</p>
               <span>⭐⭐⭐⭐ (876)</span><br />
               <del>199.99</del>
               <span>$179.99</span>
+               <a href="Corsair K95 RGB.html" class="stretched-link"></a>
             </div>
           </div>
         </div>
@@ -393,22 +425,28 @@
               <p class="card-text">Corsair Vengeance DDR5 32GB (2x16GB)</p>
               <span>⭐⭐⭐⭐ (398)</span>
               <p>$159.99</p>
+              <a href="Corsair Vengeance.html" class="stretched-link"></a>
             </div>
           </div>
         </div>
         <div class="col-md-4 cards">
           <div class="card" style="width: 18rem">
             <img
-              src="images/Dell ultra sharp.jpg"
+              src="images/h1.jpg"
               class="card-img-top"
               alt="..."
             />
+            <span
+              class="badge bg-danger"
+              style="position: absolute; top: 15px; left: 200px; width: 60px;"
+              >Sale</span>
             <div class="card-body">
               <h5 class="card-title">Dell</h5>
               <p class="card-text">Dell UltraSharp 27" 4K Monitor</p>
               <span>⭐⭐⭐⭐ (234)</span><br />
               <del>699.99</del>
               <span>$549.99</span>
+              <a href="Dell UltraSharp 27.html" class="stretched-link"></a>
             </div>
           </div>
         </div>
@@ -420,6 +458,7 @@
               <p class="card-text">Dell XPS 15 Laptop</p>
               <span>⭐⭐⭐⭐ (289)</span>
               <p>$1899.99</p>
+              <a href="Dell XPS 15.html" class="stretched-link"></a>
             </div>
           </div>
         </div>
@@ -435,6 +474,7 @@
               <p class="card-text">HP Laserjet Pro M404dn</p>
               <span>⭐⭐⭐⭐ (432)</span>
               <p>$329.99</p>
+              <a href="HP Laserjet.html" class="stretched-link"></a>
             </div>
           </div>
         </div>
@@ -450,6 +490,7 @@
               <p class="card-text">Intel Core i9-13900K Processor</p>
               <span>⭐⭐⭐⭐ (412)</span>
               <p>$589.99</p>
+              <a href="Intel Core i9.html" class="stretched-link"></a>
             </div>
           </div>
         </div>
@@ -465,6 +506,7 @@
               <p class="card-text">Logitech MX Master 3S Wireless Mouse</p>
               <span>⭐⭐⭐⭐ (2341)</span>
               <p>$99.99</p>
+              <a href="Logitech MX Master.html" class="stretched-link"></a>
             </div>
           </div>
         </div>

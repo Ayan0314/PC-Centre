@@ -70,3 +70,45 @@ $(document).ready(function(){
   })
 })
 
+
+
+ let cart = [];
+
+      $(".addToCart").click(function() {
+          let card = $(this).closest(".product-card");
+          let name = card.find(".product-name").text();
+          let price = parseFloat(card.find(".product-price").data("price"));
+          let qty = parseInt(card.find(".quantity-box").val());
+          let img = card.find(".product-img").attr("src");
+
+          // Check if item already in cart
+          let existing = cart.find(item => item.name === name);
+          if(existing){
+              existing.qty += qty;
+          } else {
+              cart.push({name, price, qty, img});
+          }
+
+          updateCart();
+      });
+
+      function updateCart() {
+          let totalCount = 0;
+          let totalPrice = 0;
+          $("#cartItems").empty();
+
+          cart.forEach(item => {
+              totalCount += item.qty;
+              totalPrice += item.price * item.qty;
+              $("#cartItems").append(`
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <img src="${item.img}" style="width:50px;height:50px;margin-right:10px;">
+                      <div>${item.name} x ${item.qty}</div>
+                      <span>$${(item.price*item.qty).toFixed(2)}</span>
+                  </li>
+              `);
+          });
+
+          $("#cartCount").text(totalCount);
+          $("#cartTotal").text(totalPrice.toFixed(2));
+      }

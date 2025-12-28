@@ -205,17 +205,32 @@
             </li>
           </ul>
 
-          <div class="d-flex align-items-center gap-3 me-3">
+                  <div class="d-flex align-items-center gap-3 me-3">
             <i class="bi bi-search text-white h5 m-0 ik"></i>
 
             <div class="position-relative">
-              <i class="bi bi-cart text-white h5 m-0"></i>
+              <i class="bi bi-cart text-white h5 m-0" id="cartIcon"></i>
               <span
                 class="badge bg-danger position-absolute top-0 start-100 translate-middle px-2"
+                id="cartCount"
                 >0</span
               >
             </div>
           </div>
+        </div>
+      </div>
+    </nav>
+    
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartCanvas">
+  <div class="offcanvas-header">
+    <h5>Your Cart</h5>
+    <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul id="cartItems" class="list-group mb-3"></ul>
+    <div class="fw-bold">Total: $<span id="cartTotal">0.00</span></div>
+  </div>
+</div>
         </div>
       </div>
     </nav>

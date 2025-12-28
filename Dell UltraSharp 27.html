@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PC Centre</title>
+    <link rel="icon" href="images/logo (5).png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .product-card { border-radius: 18px; background: #ffffff; }
+      .quantity-box { max-width: 100px; }
+      .feature-list li { margin-bottom: 10px; }
+      .service-icons div { transition: transform 0.3s ease; }
+      .service-icons div:hover { transform: translateY(-6px); }
+      .big-product-img {
+        object-fit: contain;
+        image-rendering: auto;
+        image-rendering: crisp-edges;
+        image-rendering: -webkit-optimize-contrast;
+      }
+      .ik:hover { color:#0047ab; transition: all 0.3s ease; transform: scale(1.2); }
+      .navbar .dropdown:hover .dropdown-menu { display: block; margin-top: 0; }
+      .dropdown-menu { animation: fadeIn 0.3s ease-in-out; }
+      @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="container-fluid bg-dark text-white py-2 px-4 d-flex justify-content-between align-items-center">
+      <div><i class="bi bi-telephone"></i> <span>Support: +1 (555) 123-4567</span></div>
+      <div><i class="bi bi-clock"></i> <span>Mon-Sat: 9:00 AM - 8:00 PM</span></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="nab navbar navbar-expand-lg sticky-top shadow" style="background:linear-gradient(135deg,#000428,#004e92);">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="index.html">
+          <img src="images/logo (5).png" alt="logo" style="height: 55px; width: 60px"/>
+        </a>
+        <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="padding-left: 250px">
+            <li class="nav-item"><a class="nav-link text-white nav-link-custom" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white nav-link-custom" href="About.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link text-white nav-link-custom" href="product.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link text-white nav-link-custom" href="faqs.html">Help & FAQs</a></li>
+            <li class="nav-item"><a class="nav-link text-white nav-link-custom" href="Contact.html">Contact Us</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown">Company Catalogs</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Dell.html">Dell</a></li>
+                <li><a class="dropdown-item" href="acer.html">Acer</a></li>
+                <li><a class="dropdown-item" href="Toshiba.html">Toshiba</a></li>
+                <li><a class="dropdown-item" href="Hp.html">HP</a></li>
+                <li><a class="dropdown-item" href="Asus.html">ASUS</a></li>
+                <li><a class="dropdown-item" href="lenovo.html">Lenovo</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-3 me-3">
+            <i class="bi bi-search text-white h5 m-0 ik"></i>
+            <div class="position-relative">
+              <i class="bi bi-cart text-white h5 m-0" id="cartIcon" data-bs-toggle="offcanvas" data-bs-target="#cartCanvas" style="cursor:pointer"></i>
+              <span class="badge bg-danger position-absolute top-0 start-100 translate-middle px-2" id="cartCount">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Offcanvas Cart -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartCanvas">
+      <div class="offcanvas-header">
+        <h5>Your Cart</h5>
+        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul id="cartItems" class="list-group mb-3"></ul>
+        <div class="fw-bold">Total: $<span id="cartTotal">0.00</span></div>
+      </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" style="margin-top: 20px; margin-left: 7%; padding-top: 20px;">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html" style="text-decoration: none;" class="text-dark">Home</a></li>
+        <li class="breadcrumb-item"><a href="product.html" style="text-decoration: none;" class="text-dark">Products</a></li>
+        <li class="breadcrumb-item active" aria-current="page" style="color: #0047ab;">Dell UltraSharp 27" 4K Monitor</li>
+      </ol>
+    </nav>
+
+    <!-- Product Details -->
+    <div class="container my-5">
+      <div class="card product-card shadow-lg border-0">
+        <div class="row g-0 align-items-center">
+
+          <!-- BIG Product Image -->
+          <div class="col-lg-6 p-4 text-center">
+            <img src="images/h1.jpg" class="img-fluid big-product-img product-img" alt="Dell XPS 15" style="height:500px;width:400px;" />
+          </div>
+
+          <!-- Product Info -->
+          <div class="col-lg-6 p-4">
+            <span class="badge bg-primary mb-2">Dell</span>
+            <h2 class="fw-bold mt-2 product-name">Dell UltraSharp 27" 4K Monitor</h2>
+            <p class="text-warning mb-1 fs-5">⭐⭐⭐⭐☆ <span class="text-muted fs-6">4.7 (234 reviews)</span></p>
+            <h3 class="text-success fw-bold my-3 product-price" data-price="549.99">$549.99</h3>
+            <p class="text-success fw-semibold">✔ In Stock</p>
+            <hr />
+
+            <h5 class="fw-bold mb-3">Key Features</h5>
+            <ul class="list-unstyled fs-6 feature-list">
+              <li>✔ 27-inch 4K UHD (3840 x 2160) resolution</li>
+              <li>✔ IPS panel with 99% sRGB color coverage</li>
+              <li>✔ USB-C connectivity with 90W power delivery</li>
+              <li>✔ Adjustable stand with pivot, tilt, and height adjustment</li>
+              <li>✔ Built-in cable management</li>
+            </ul>
+
+            <div class="d-flex align-items-center gap-3 my-4">
+              <input type="number" value="1" min="1" class="form-control quantity-box" />
+              <button class="btn btn-primary btn-lg px-4 addToCart"><i class="bi bi-cart"></i> Add To Cart</button>
+            </div>
+
+            <div class="d-flex gap-3">
+              <button class="btn btn-outline-danger">🤍 Wishlist</button>
+              <button class="btn btn-outline-secondary">🔗 Share</button>
+            </div>
+
+            <hr />
+
+            <div class="row text-center mt-4 service-icons">
+              <div class="col-4">
+                <a href="fast_delivery.html" class="text-decoration-none text-dark"><h2>🚚</h2><p>Fast Delivery</p></a>
+              </div>
+              <div class="col-4">
+                <a href="warranty.html" class="text-decoration-none text-dark"><h2>🛡️</h2><p>Warranty</p></a>
+              </div>
+              <div class="col-4">
+                <a href="support.html" class="text-decoration-none text-dark"><h2>🎧</h2><p>Support</p></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid text-white pt-4" style="background:linear-gradient(135deg,#000428,#004e92);">
+      <div class="row px-4">
+        <div class="col-md-3 mb-3">
+          <a href="index.html"><img src="images/logo (5).png" alt="logo" style="height: 55px; width: 60px; margin-bottom: 10px"/></a>
+          <p>Your trusted IT solutions partner with over 2 years of experience and 1,000+ products from leading manufacturers.</p>
+          <i class="bi bi-facebook me-2 hovee"></i>
+          <i class="bi bi-twitter me-2 hovee"></i>
+          <i class="bi bi-instagram me-2 hovee"></i>
+          <i class="bi bi-linkedin hovee"></i>
+        </div>
+
+        <div class="col-md-3 mb-3" style="padding-left: 90px">
+          <h5>Quick Links</h5>
+          <a href="index.html" style="text-decoration: none; color: white"><p class="hovee">Home</p></a>
+          <a href="product.html" style="text-decoration: none; color: white"><p class="hovee">Products</p></a>
+          <a href="faqs.html" style="text-decoration: none; color: white"><p class="hovee">Help & Support</p></a>
+          <a href="About.html" style="text-decoration: none; color: white"><p class="hovee">About Us</p></a>
+          <a href="Contact.html" style="text-decoration: none; color: white"><p class="hovee">Contact</p></a>
+        </div>
+
+        <div class="col-md-3 mb-3" style="padding-left: 90px">
+          <h5>Categories</h5>
+          <p class="hovee">Notebooks</p>
+          <p class="hovee">Displays</p>
+          <p class="hovee">Storage</p>
+          <p class="hovee">Printers</p>
+          <p class="hovee">Accessories</p>
+        </div>
+
+        <div class="col-md-3 mb-3" style="padding-left: 90px">
+          <h5>Contact Us</h5>
+          <p><i class="bi bi-geo-alt"></i> 123 Tech Street, Karachi</p>
+          <p><i class="bi bi-telephone"></i> +1 (555) 123-4567</p>
+          <p><i class="bi bi-envelope"></i> support@pccentre.com</p>
+        </div>
+      </div>
+
+      <hr class="container" />
+      <div class="text-center pb-3">
+        <p class="mb-0">© 2025 PC Centre. All rights reserved. | Privacy Policy | Terms of Service</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    let cart = [];
+
+      $(".addToCart").click(function() {
+          let card = $(this).closest(".product-card");
+          let name = card.find(".product-name").text();
+          let price = parseFloat(card.find(".product-price").data("price"));
+          let qty = parseInt(card.find(".quantity-box").val());
+          let img = card.find(".product-img").attr("src");
+
+          // Check if item already in cart
+          let existing = cart.find(item => item.name === name);
+          if(existing){
+              existing.qty += qty;
+          } else {
+              cart.push({name, price, qty, img});
+          }
+
+          updateCart();
+      });
+
+      function updateCart() {
+          let totalCount = 0;
+          let totalPrice = 0;
+          $("#cartItems").empty();
+
+          cart.forEach(item => {
+              totalCount += item.qty;
+              totalPrice += item.price * item.qty;
+              $("#cartItems").append(`
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <img src="${item.img}" style="width:50px;height:50px;margin-right:10px;">
+                      <div>${item.name} x ${item.qty}</div>
+                      <span>$${(item.price*item.qty).toFixed(2)}</span>
+                  </li>
+              `);
+          });
+
+          $("#cartCount").text(totalCount);
+          $("#cartTotal").text(totalPrice.toFixed(2));
+      }
+    </script>
+  </body>
+</html>
