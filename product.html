@@ -132,6 +132,202 @@
     transform: translateY(0);
   }
 }
+/* ===============================
+   MOBILE RESPONSIVE FIX
+   (NO HTML CHANGE)
+================================ */
+@media (max-width: 768px) {
+
+  /* HEADER */
+  .hea {
+    flex-direction: column;
+    height: auto;
+    padding: 8px 0;
+    gap: 5px;
+    text-align: center;
+  }
+
+  /* NAVBAR FIX */
+  .nav a,
+  .l {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .navbar-nav {
+    padding-left: 0 !important;
+    text-align: center;
+  }
+
+  .ic {
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  /* HERO */
+  .hero {
+    height: 300px;
+  }
+
+  .h {
+    font-size: 30px !important;
+  }
+
+  .pt {
+    font-size: 14px;
+  }
+
+  /* FEATURES STRIP */
+  .dii {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+    gap: 20px;
+  }
+
+  /* NEWS & OFFERS */
+  .cdo {
+    height: auto;
+  }
+
+  /* FEATURED DEALS CARDS */
+  .card {
+    width: 100% !important;
+    margin: auto;
+  }
+
+  .card img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* BADGE POSITION FIX */
+  .badge {
+    right: 10px !important;
+    left: auto !important;
+  }
+
+  /* SHOP BY CATEGORY */
+  .hov {
+    margin-bottom: 15px;
+  }
+
+  /* SERVICES */
+  .our {
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  /* FOOTER */
+  footer .col-md-3 {
+    padding-left: 15px !important;
+    text-align: center;
+  }
+
+  footer img {
+    margin: auto;
+    display: block;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}
+
+/* ===============================
+   EXTRA SMALL DEVICES
+================================ */
+@media (max-width: 480px) {
+
+  .h {
+    font-size: 24px !important;
+  }
+
+  .pt {
+    font-size: 13px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  /* Categories center align on mobile */
+  .categories {
+    float: none !important;        /* Remove float */
+    width: 100% !important;        /* Full width */
+    padding: 0 15px !important;    /* Some padding */
+    margin: 0 auto !important;     /* Center it */
+    text-align: center;            /* Text center */
+  }
+
+  .categories ul.list-group {
+    display: inline-block;         /* Make list inline-block for center */
+    text-align: left;              /* Keep list items left-aligned */
+  }
+
+  .categories p,
+  .categories select {
+    text-align: center;            /* Center headings and selects */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Center the collapsible categories on mobile */
+  #categoriesCollapse .categories {
+    width: 90%;           /* Shrink it a bit from full width */
+    margin: 0 auto;       /* Center horizontally */
+    text-align: center;   /* Center headings/text */
+    padding: 15px 0;
+  }
+
+  #categoriesCollapse .categories ul.list-group {
+    display: inline-block; /* So the list is centered */
+    text-align: left;      /* Keep list items left-aligned */
+  }
+}
+@media (max-width: 768px) {
+  .btn.d-md-none {
+    display: block;
+    margin: 10px auto;
+  }
+}
+@media (max-width: 768px) {
+  /* Collapse Categories full width fix */
+  #categoriesCollapse .categories {
+    width: 100% !important;
+    padding: 15px !important;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /* Center the list */
+  #categoriesCollapse .categories ul.list-group {
+    display: block;
+    width: 100%;
+    text-align: left; /* list items left aligned inside */
+    padding-left: 0;
+  }
+
+  /* Make dropdowns full width */
+  #categoriesCollapse .categories select.form-select {
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+
+  /* Headings center aligned */
+  #categoriesCollapse .categories p.heading {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+
     </style>
   </head>
   <body>
@@ -150,7 +346,7 @@
     </div>
 
     <nav
-      class="nab navbar navbar-expand-lg sticky-top shadow"
+      class="navbar navbar-expand-lg navbar-dark sticky-top shadow"
       style="background:linear-gradient(135deg,#000428,#004e92);"
     >
       <div class="container-fluid">
@@ -174,7 +370,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul
             class="navbar-nav me-auto mb-2 mb-lg-0"
-            style="padding-left: 250px"
+            style="padding-left: 280px"
           >
             <li class="nav-item">
               <a class="nav-link text-white nav-link-custom" href="index.html">Home</a>
@@ -246,54 +442,47 @@
       </div>
     </nav>
     
-    <div
-      class="categories align-items-center"
-      style="float: left; width: 250px; padding-right: 20px;"
-    >
-      <p class="heading fw-bold mt-4">Categories</p>
-      <ul class="list-group">
-        <li class="list-group-item">Display</li>
-        <li class="list-group-item">Motherboards & Processors</li>
-        <li class="list-group-item">Notebooks</li>
-        <li class="list-group-item">Storage</li>
-        <li class="list-group-item">Memory</li>
-        <li class="list-group-item">Moderns</li>
-        <li class="list-group-item">Sound</li>
-        <li class="list-group-item">Mouse / Keyboards</li>
-        <li class="list-group-item">Printers</li>
-        <li class="list-group-item">Scanners</li>
-        <li class="list-group-item">UPS</li>
-        <li class="list-group-item">Accessories</li>
-      </ul>
-      <hr />
-      
-      <p>Price Range</p>
-      <select class="form-select mb-3">
-        <option selected>All Prices</option>
-        <option>Under $100</option>
-        <option>$100 - $500</option>
-        <option>$500 - $1,000</option>
-        <option>$1,000 - $2,000</option>
-        <option>Over $2,000</option>
-      </select>
-      
-      <hr />
-      
-      <p>Brand</p>
-      <select class="form-select mb-4">
-        <option selected>All Brand</option>
-        <option>Dell</option>
-        <option>HP</option>
-        <option>Lenovo</option>
-        <option>ASUS</option>
-        <option>Acer</option>
-        <option>Samsung</option>
-        <option>Intel</option>
-        <option>Corsair</option>
-        <option>Logitech</option>
-        <option>APC</option>
-      </select>
-    </div>
+    <button class="btn btn-primary d-md-none mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#categoriesCollapse">
+  Categories &#9660;
+</button>
+
+<div class="collapse d-md-block" id="categoriesCollapse">
+  <div class="categories">
+    <p class="heading fw-bold mt-4">Categories</p>
+    <ul class="list-group">
+      <li class="list-group-item">Display</li>
+      <li class="list-group-item">Motherboards & Processors</li>
+      <li class="list-group-item">Notebooks</li>
+      <!-- ...rest -->
+    </ul>
+    <hr />
+    <p>Price Range</p>
+    <select class="form-select mb-3">
+      <option selected>All Prices</option>
+      <option>Under $100</option>
+      <option>$100 - $500</option>
+      <option>$500 - $1,000</option>
+      <option>$1,000 - $2,000</option>
+      <option>Over $2,000</option>
+    </select>
+    <hr />
+    <p>Brand</p>
+    <select class="form-select mb-4">
+      <option selected>All Brand</option>
+      <option>Dell</option>
+      <option>HP</option>
+      <option>Lenovo</option>
+      <option>ASUS</option>
+      <option>Acer</option>
+      <option>Samsung</option>
+      <option>Intel</option>
+      <option>Corsair</option>
+      <option>Logitech</option>
+      <option>APC</option>
+    </select>
+  </div>
+</div>
+
     
     <div class="product-toolbar">
       <div class="products-count">12 products found</div>

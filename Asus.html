@@ -121,6 +121,131 @@
     transform: translateY(0);
   }
 }
+/* ===============================
+   MOBILE RESPONSIVE FIX
+   (NO HTML CHANGE)
+================================ */
+@media (max-width: 768px) {
+
+  /* HEADER */
+  .hea {
+    flex-direction: column;
+    height: auto;
+    padding: 8px 0;
+    gap: 5px;
+    text-align: center;
+  }
+
+  /* NAVBAR FIX */
+  .nav a,
+  .l {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .navbar-nav {
+    padding-left: 0 !important;
+    text-align: center;
+  }
+
+  .ic {
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  /* HERO */
+  .hero {
+    height: 300px;
+  }
+
+  .h {
+    font-size: 30px !important;
+  }
+
+  .pt {
+    font-size: 14px;
+  }
+
+  /* FEATURES STRIP */
+  .dii {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+    gap: 20px;
+  }
+
+  /* NEWS & OFFERS */
+  .cdo {
+    height: auto;
+  }
+
+  /* FEATURED DEALS CARDS */
+  .card {
+    width: 100% !important;
+    margin: auto;
+  }
+
+  .card img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* BADGE POSITION FIX */
+  .badge {
+    right: 10px !important;
+    left: auto !important;
+  }
+
+  /* SHOP BY CATEGORY */
+  .hov {
+    margin-bottom: 15px;
+  }
+
+  /* SERVICES */
+  .our {
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  /* FOOTER */
+  footer .col-md-3 {
+    padding-left: 15px !important;
+    text-align: center;
+  }
+
+  footer img {
+    margin: auto;
+    display: block;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}
+
+/* ===============================
+   EXTRA SMALL DEVICES
+================================ */
+@media (max-width: 480px) {
+
+  .h {
+    font-size: 24px !important;
+  }
+
+  .pt {
+    font-size: 13px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
     </style>
   </head>
   <body>
@@ -139,7 +264,7 @@
     </div>
 
     <nav
-      class="nab navbar navbar-expand-lg sticky-top shadow"
+      class="navbar navbar-expand-lg navbar-dark sticky-top shadow"
       style="background:linear-gradient(135deg,#000428,#004e92);"
     >
       <div class="container-fluid">
@@ -163,7 +288,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul
             class="navbar-nav me-auto mb-2 mb-lg-0"
-            style="padding-left: 250px"
+            style="padding-left: 280px"
           >
             <li class="nav-item">
               <a class="nav-link  text-white nav-link-custom" href="index.html">Home</a>
@@ -261,6 +386,7 @@
           <h6>ASUS ROG Swift 34" Curved Gaming Monitor</h6>
           <span>⭐⭐⭐⭐⭐ (187)</span>
           <h5>$899.99</h5>
+          <a href="ASUS ROG Swift 34.html" class="stretched-link"></a>
         </div>
       </div>
     </div>
@@ -271,6 +397,7 @@
           <h6>ASUS ROG Strix Z790-E Gaming WiFi</h6>
           <span>⭐⭐⭐⭐ (156)</span>
           <h5>$449.99</h5>
+          <a href="ASUS ROG Strix Z790-E.html" class="stretched-link"></a>
         </div>
       </div>
     </div>
@@ -281,6 +408,7 @@
           <h6>ASUS ROG Zephyrus G14 Gaming Laptop</h6>
           <span>⭐⭐⭐⭐ (341)</span>
           <h5>$1649.99</h5>
+          <a href="ASUS ROG Zephyrus.html" class="stretched-link"></a>
         </div>
       </div>
     </div>
