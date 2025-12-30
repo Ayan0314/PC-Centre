@@ -1,283 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>About Us - PC Centre</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="images/logo (5).png">
+  <head>
+    <meta charset="UTF-8" />
+    <title>About Us - PC Centre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo (5).png" />
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <style>
-    body {
-  overflow-x: hidden;
-  background-color:aliceblue;
- }
+    <style>
+      body {
+        overflow-x: hidden;
+        background-color: aliceblue;
+      }
 
-    /* HERO */
-    .about-hero {
-      padding: 100px 0;
-      background: linear-gradient(135deg, #020617, #0f172a);
-      text-align: center;
-    }
+      /* HERO */
+      .about-hero {
+        padding: 100px 0;
+        background: linear-gradient(135deg, #020617, #0f172a);
+        text-align: center;
+      }
 
-    .about-hero h1 {
-      font-size: 3rem;
-      font-weight: 700;
-      color: #38bdf8;
-    }
+      .about-hero h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #38bdf8;
+      }
 
-    .about-hero p {
-      max-width: 700px;
-      margin: 20px auto 0;
-      color: #cbd5f5;
-      font-size: 1.1rem;
-    }
+      .about-hero p {
+        max-width: 700px;
+        margin: 20px auto 0;
+        color: #cbd5f5;
+        font-size: 1.1rem;
+      }
 
-    /* SECTIONS */
-    .about-section {
-      padding: 80px 0;
-    }
+      /* SECTIONS */
+      .about-section {
+        padding: 80px 0;
+      }
 
-    .about-box {
-      background: #020617;
-      border-radius: 16px;
-      padding: 30px;
-      height: 100%;
-      transition: 0.3s;
-    }
+      .about-box {
+        background: #020617;
+        border-radius: 16px;
+        padding: 30px;
+        height: 100%;
+        transition: 0.3s;
+      }
 
-    .about-box:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    }
+      .about-box:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      }
 
-    .about-box i {
-      font-size: 40px;
-      color: #38bdf8;
-      margin-bottom: 15px;
-    }
+      .about-box i {
+        font-size: 40px;
+        color: #38bdf8;
+        margin-bottom: 15px;
+      }
 
-    .about-box h5 {
-      font-weight: 600;
-      margin-bottom: 10px;
-    }
+      .about-box h5 {
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
 
-    /* STATS */
-    .stats {
-      background: #020617;
-      padding: 60px 0;
-      text-align: center;
-    }
+      /* STATS */
+      .stats {
+        background: #020617;
+        padding: 60px 0;
+        text-align: center;
+      }
 
-    .stat-box h2 {
-      color: #38bdf8;
-      font-weight: 700;
-    }
+      .stat-box h2 {
+        color: #38bdf8;
+        font-weight: 700;
+      }
 
-    .stat-box p {
-      color: #94a3b8;
-      margin: 0;
-    }
+      .stat-box p {
+        color: #94a3b8;
+        margin: 0;
+      }
 
-    /* CTA */
-    .about-cta {
-      padding: 70px 20px;
-      text-align: center;
-      color: #fff;
-    }
+      /* CTA */
+      .about-cta {
+        padding: 70px 20px;
+        text-align: center;
+        color: #fff;
+      }
 
-    .about-cta h2 {
-      font-weight: 700;
-    }
+      .about-cta h2 {
+        font-weight: 700;
+      }
 
-    .about-cta p {
-      max-width: 600px;
-      margin: 15px auto;
-    }
+      .about-cta p {
+        max-width: 600px;
+        margin: 15px auto;
+      }
 
-    .about-cta a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 30px;
-      color: #fff;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 500;
-    }
+      .about-cta a {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 30px;
+        color: #fff;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: 500;
+      }
 
-    .about-cta a:hover {
-      opacity: 0.9;
-    }
+      .about-cta a:hover {
+        opacity: 0.9;
+      }
 
-    .support-hero {
-        background:linear-gradient(135deg,#000428,#004e92);
+      .support-hero {
+        background: linear-gradient(135deg, #000428, #004e92);
         color: white;
         padding: 70px 20px;
         text-align: center;
       }
       .ik:hover {
-        color:#0047ab;
+        color: #0047ab;
         /* box-shadow: 0 0 15px rgba(56,189,248,0.6); */
         transition: all 0.3s ease;
         transform: scale(1.2);
+      }
+
+      /* Hover Dropdown */
+      .navbar .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+      }
+
+      /* Smooth animation */
+      .dropdown-menu {
+        animation: fadeIn 0.3s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
         }
-
-        /* Hover Dropdown */
-.navbar .dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0;
-}
-
-/* Smooth animation */
-.dropdown-menu {
-  animation: fadeIn 0.3s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-/* ===============================
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      /* ===============================
    MOBILE RESPONSIVE FIX
    (NO HTML CHANGE)
 ================================ */
-@media (max-width: 768px) {
+      @media (max-width: 768px) {
+        /* HEADER */
+        .hea {
+          flex-direction: column;
+          height: auto;
+          padding: 8px 0;
+          gap: 5px;
+          text-align: center;
+        }
 
-  /* HEADER */
-  .hea {
-    flex-direction: column;
-    height: auto;
-    padding: 8px 0;
-    gap: 5px;
-    text-align: center;
-  }
+        /* NAVBAR FIX */
+        .nav a,
+        .l {
+          padding-left: 0 !important;
+          margin-left: 0 !important;
+        }
 
-  /* NAVBAR FIX */
-  .nav a,
-  .l {
-    padding-left: 0 !important;
-    margin-left: 0 !important;
-  }
+        .navbar-nav {
+          padding-left: 0 !important;
+          text-align: center;
+        }
 
-  .navbar-nav {
-    padding-left: 0 !important;
-    text-align: center;
-  }
+        .ic {
+          justify-content: center;
+          margin: 10px 0;
+        }
 
-  .ic {
-    justify-content: center;
-    margin: 10px 0;
-  }
+        /* HERO */
+        .hero {
+          height: 300px;
+        }
 
-  /* HERO */
-  .hero {
-    height: 300px;
-  }
+        .h {
+          font-size: 30px !important;
+        }
 
-  .h {
-    font-size: 30px !important;
-  }
+        .pt {
+          font-size: 14px;
+        }
 
-  .pt {
-    font-size: 14px;
-  }
+        /* FEATURES STRIP */
+        .dii {
+          flex-direction: column;
+          height: auto;
+          padding: 20px 0;
+          gap: 20px;
+        }
 
-  /* FEATURES STRIP */
-  .dii {
-    flex-direction: column;
-    height: auto;
-    padding: 20px 0;
-    gap: 20px;
-  }
+        /* NEWS & OFFERS */
+        .cdo {
+          height: auto;
+        }
 
-  /* NEWS & OFFERS */
-  .cdo {
-    height: auto;
-  }
+        /* FEATURED DEALS CARDS */
+        .card {
+          width: 100% !important;
+          margin: auto;
+        }
 
-  /* FEATURED DEALS CARDS */
-  .card {
-    width: 100% !important;
-    margin: auto;
-  }
+        .card img {
+          width: 100% !important;
+          height: auto !important;
+        }
 
-  .card img {
-    width: 100% !important;
-    height: auto !important;
-  }
+        /* BADGE POSITION FIX */
+        .badge {
+          right: 10px !important;
+          left: auto !important;
+        }
 
-  /* BADGE POSITION FIX */
-  .badge {
-    right: 10px !important;
-    left: auto !important;
-  }
+        /* SHOP BY CATEGORY */
+        .hov {
+          margin-bottom: 15px;
+        }
 
-  /* SHOP BY CATEGORY */
-  .hov {
-    margin-bottom: 15px;
-  }
+        /* SERVICES */
+        .our {
+          height: auto;
+          padding-bottom: 30px;
+        }
 
-  /* SERVICES */
-  .our {
-    height: auto;
-    padding-bottom: 30px;
-  }
+        /* FOOTER */
+        footer .col-md-3 {
+          padding-left: 15px !important;
+          text-align: center;
+        }
 
-  /* FOOTER */
-  footer .col-md-3 {
-    padding-left: 15px !important;
-    text-align: center;
-  }
+        footer img {
+          margin: auto;
+          display: block;
+        }
 
-  footer img {
-    margin: auto;
-    display: block;
-  }
+        footer p {
+          font-size: 14px;
+        }
+      }
 
-  footer p {
-    font-size: 14px;
-  }
-}
-
-/* ===============================
+      /* ===============================
    EXTRA SMALL DEVICES
 ================================ */
-@media (max-width: 480px) {
+      @media (max-width: 480px) {
+        .h {
+          font-size: 24px !important;
+        }
 
-  .h {
-    font-size: 24px !important;
-  }
+        .pt {
+          font-size: 13px;
+        }
 
-  .pt {
-    font-size: 13px;
-  }
+        .btn {
+          font-size: 14px;
+          padding: 8px 16px;
+        }
 
-  .btn {
-    font-size: 14px;
-    padding: 8px 16px;
-  }
+        p {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
 
-  p {
-    font-size: 14px;
-  }
-}
-
-  </style>
-</head>
-
-<body>
-
+  <body>
     <!-- header -->
     <div
       class="container-fluid bg-dark text-white py-2 px-4 d-flex justify-content-between align-items-center"
@@ -294,7 +296,7 @@
 
     <nav
       class="navbar navbar-expand-lg navbar-dark sticky-top shadow"
-      style="background:linear-gradient(135deg,#000428,#004e92);"
+      style="background: linear-gradient(135deg, #000428, #004e92)"
     >
       <div class="container-fluid">
         <a class="navbar-brand text-white" href="index.html">
@@ -320,23 +322,35 @@
             style="padding-left: 280px"
           >
             <li class="nav-item">
-              <a class="nav-link  text-white nav-link-custom" href="index.html">Home</a>
+              <a class="nav-link text-white nav-link-custom" href="index.html"
+                >Home</a
+              >
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active  text-white nav-link-custom" href="About.html">About Us</a>
+              <a
+                class="nav-link active text-white nav-link-custom"
+                href="About.html"
+                >About Us</a
+              >
             </li>
 
             <li class="nav-item">
-              <a class="nav-link text-white nav-link-custom" href="product.html">Products</a>
+              <a class="nav-link text-white nav-link-custom" href="product.html"
+                >Products</a
+              >
             </li>
 
             <li class="nav-item">
-              <a class="nav-link text-white nav-link-custom" href="faqs.html">Help & FAQs</a>
+              <a class="nav-link text-white nav-link-custom" href="faqs.html"
+                >Help & FAQs</a
+              >
             </li>
 
             <li class="nav-item">
-              <a class="nav-link text-white nav-link-custom" href="Contact.html">Contact Us</a>
+              <a class="nav-link text-white nav-link-custom" href="Contact.html"
+                >Contact Us</a
+              >
             </li>
 
             <li class="nav-item dropdown">
@@ -351,7 +365,9 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="Dell.html">Dell</a></li>
                 <li><a class="dropdown-item" href="acer.html">Acer</a></li>
-                <li><a class="dropdown-item" href="Toshiba.html">Toshiba</a></li>
+                <li>
+                  <a class="dropdown-item" href="Toshiba.html">Toshiba</a>
+                </li>
                 <li><a class="dropdown-item" href="Hp.html">HP</a></li>
                 <li><a class="dropdown-item" href="Asus.html">ASUS</a></li>
                 <li><a class="dropdown-item" href="lenovo.html">Lenovo</a></li>
@@ -375,120 +391,126 @@
       </div>
     </nav>
     <!-- Offcanvas Cart -->
-<div class="offcanvas offcanvas-end" tabindex="-1" id="cartCanvas">
-  <div class="offcanvas-header">
-    <h5>Your Cart</h5>
-    <button class="btn-close" data-bs-dismiss="offcanvas"></button>
-  </div>
-  <div class="offcanvas-body">
-    <ul id="cartItems" class="list-group mb-3"></ul>
-    <div class="fw-bold">Total: $<span id="cartTotal">0.00</span></div>
-  </div>
-</div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartCanvas">
+      <div class="offcanvas-header">
+        <h5>Your Cart</h5>
+        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul id="cartItems" class="list-group mb-3"></ul>
+        <div class="fw-bold">Total: $<span id="cartTotal">0.00</span></div>
+      </div>
+    </div>
 
-  <section class="support-hero">
+    <section class="support-hero">
       <h1 class="fw-bold">About PC Centre</h1>
-      <p class="mt-2">Your trusted destination for premium laptops, accessories, and cutting-edge technology — delivering quality, reliability, and innovation.</p>
+      <p class="mt-2">
+        Your trusted destination for premium laptops, accessories, and
+        cutting-edge technology — delivering quality, reliability, and
+        innovation.
+      </p>
     </section>
 
-  <!-- ABOUT INFO -->
-  <section class="about-section">
-    <div class="container">
-      <div class="row g-4">
+    <!-- ABOUT INFO -->
+    <section class="about-section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="about-box text-center bg-white shadow">
+              <i class="bi bi-bullseye" style="color: #0047ab"></i>
+              <h5>Our Mission</h5>
+              <p>
+                To provide high-quality computer products with honest pricing,
+                expert guidance, and excellent customer service.
+              </p>
+            </div>
+          </div>
 
-        <div class="col-md-4">
-          <div class="about-box text-center bg-white shadow">
-            <i class="bi bi-bullseye" style="color: #0047AB;"></i>
-            <h5>Our Mission</h5>
-            <p>
-              To provide high-quality computer products with honest pricing,
-              expert guidance, and excellent customer service.
-            </p>
+          <div class="col-md-4">
+            <div class="about-box text-center bg-white shadow">
+              <i class="bi bi-eye" style="color: #0047ab"></i>
+              <h5>Our Vision</h5>
+              <p>
+                To become Pakistan’s most trusted and innovative IT retail
+                brand, empowering people through technology.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="about-box text-center bg-white shadow">
+              <i class="bi bi-award" style="color: #0047ab"></i>
+              <h5>Why Trust Us</h5>
+              <p>
+                Genuine products, official warranties, and a passionate team
+                that values long-term customer relationships.
+              </p>
+            </div>
           </div>
         </div>
-
-        <div class="col-md-4">
-          <div class="about-box text-center bg-white shadow">
-            <i class="bi bi-eye" style="color: #0047AB;"></i>
-            <h5>Our Vision</h5>
-            <p>
-              To become Pakistan’s most trusted and innovative IT retail brand,
-              empowering people through technology.
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="about-box text-center bg-white shadow">
-            <i class="bi bi-award" style="color: #0047AB;"></i>
-            <h5>Why Trust Us</h5>
-            <p>
-              Genuine products, official warranties, and a passionate team
-              that values long-term customer relationships.
-            </p>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- STATS -->
-  <section class="stats" style="background:linear-gradient(135deg,#000428,#004e92);">
-    <div class="container">
-      <div class="row g-4">
+    <!-- STATS -->
+    <section
+      class="stats"
+      style="background: linear-gradient(135deg, #000428, #004e92)"
+    >
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-3 col-6">
+            <div class="stat-box">
+              <h2 class="text-white">5K+</h2>
+              <p class="text-white">Happy Customers</p>
+            </div>
+          </div>
 
-        <div class="col-md-3 col-6">
-          <div class="stat-box ">
-            <h2 class="text-white">5K+</h2>
-            <p class="text-white">Happy Customers</p>
+          <div class="col-md-3 col-6">
+            <div class="stat-box">
+              <h2 class="text-white">100+</h2>
+              <p class="text-white">Products</p>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <div class="stat-box">
+              <h2 class="text-white">10+</h2>
+              <p class="text-white">Top Brands</p>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <div class="stat-box">
+              <h2 class="text-white">24/7</h2>
+              <p class="text-white">Support</p>
+            </div>
           </div>
         </div>
-
-        <div class="col-md-3 col-6">
-          <div class="stat-box">
-            <h2 class="text-white">100+</h2>
-            <p class="text-white">Products</p>
-          </div>
-        </div>
-
-        <div class="col-md-3 col-6">
-          <div class="stat-box">
-            <h2 class="text-white">10+</h2>
-            <p class="text-white">Top Brands</p>
-          </div>
-        </div>
-
-        <div class="col-md-3 col-6">
-          <div class="stat-box">
-            <h2 class="text-white">24/7</h2>
-            <p class="text-white">Support</p>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CTA -->
-  <section class="about-cta bg-dark">
-    <h2>Technology You Can Trust</h2>
-    <p>
-      Whether you're a student, professional, or gamer —
-      PC Centre is here to power your journey.
-    </p>
-    <a href="product.html">Explore Products</a>
-  </section>
-  <!-- Footer -->
-    <footer class="container-fluid bg-dark text-white pt-4" style="background:linear-gradient(135deg,#000428,#004e92);">
+    <!-- CTA -->
+    <section class="about-cta bg-dark">
+      <h2>Technology You Can Trust</h2>
+      <p>
+        Whether you're a student, professional, or gamer — PC Centre is here to
+        power your journey.
+      </p>
+      <a href="product.html">Explore Products</a>
+    </section>
+    <!-- Footer -->
+    <footer
+      class="container-fluid bg-dark text-white pt-4"
+      style="background: linear-gradient(135deg, #000428, #004e92)"
+    >
       <div class="row px-4">
         <div class="col-md-3 mb-3">
           <a href="index.html">
-          <img
-            src="images/logo (5).png"
-            alt="logo"
-            style="height: 55px; width: 60px; margin-bottom: 10px"
-          />
+            <img
+              src="images/logo (5).png"
+              alt="logo"
+              style="height: 55px; width: 60px; margin-bottom: 10px"
+            />
           </a>
           <p>
             Your trusted IT solutions partner with over 2 years of experience
@@ -503,20 +525,20 @@
         <div class="col-md-3 mb-3" style="padding-left: 90px">
           <h5>Quick Links</h5>
           <a href="index.html" style="text-decoration: none; color: white">
-          <p class="hovee">Home</p>
+            <p class="hovee">Home</p>
           </a>
           <a href="product.html" style="text-decoration: none; color: white">
-          <p class="hovee">Products</p>
+            <p class="hovee">Products</p>
           </a>
           <a href="faqs.html" style="text-decoration: none; color: white">
-          <p class="hovee">Help & Support</p>
+            <p class="hovee">Help & Support</p>
           </a>
           <a href="About.html" style="text-decoration: none; color: white">
             <p class="hovee">About Us</p>
           </a>
           <a href="Contact.html" style="text-decoration: none; color: white">
             <p class="hovee">Contact</p>
-            </a>
+          </a>
         </div>
 
         <div class="col-md-3 mb-3" style="padding-left: 90px">
@@ -546,7 +568,6 @@
       </div>
     </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

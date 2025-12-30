@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Acer - PC Centre</title>
-    <link rel="icon" href="images/logo (5).png">
+    <link rel="icon" href="images/logo (5).png" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -21,230 +21,231 @@
     ></script>
     <style>
       .support-hero {
-        background:linear-gradient(135deg,#000428,#004e92);
+        background: linear-gradient(135deg, #000428, #004e92);
         color: white;
         padding: 70px 20px;
         text-align: center;
       }
-       /* STATS */
-    .stat-box {
-      background:#fff;
-      padding:30px;
-      border-radius:12px;
-      box-shadow:0 6px 15px rgba(0,0,0,.1);
-      text-align:center;
-      height:100%;
-    }
+      /* STATS */
+      .stat-box {
+        background: #fff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        height: 100%;
+      }
 
-    /* PRODUCTS */
-    .section-title {
-      text-align:center;
-      font-weight:600;
-      margin-bottom:40px;
-    }
+      /* PRODUCTS */
+      .section-title {
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 40px;
+      }
 
-    .card {
-      background:#fff;
-      border-radius:14px;
-      box-shadow:0 8px 20px rgba(0,0,0,.12);
-      height:100%;
-      display:flex;
-      flex-direction:column;
-      transition:.3s;
-      text-align: center;
-    }
+      .card {
+        background: #fff;
+        border-radius: 14px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        transition: 0.3s;
+        text-align: center;
+      }
 
-    .card:hover { transform: translateY(-6px); }
+      .card:hover {
+        transform: translateY(-6px);
+      }
 
-    .card img {
-      height:220px;
-      object-fit:contain;
-      background:#f8f9fa;
-      padding:20px;
-      text-align: center;
-      margin-left: 40px;
-    }
+      .card img {
+        height: 220px;
+        object-fit: contain;
+        background: #f8f9fa;
+        padding: 20px;
+        text-align: center;
+        margin-left: 40px;
+      }
 
-    .card .card-body {
-      text-align:center;
-    }
+      .card .card-body {
+        text-align: center;
+      }
 
-    /* WHY DELL */
-    .why-dell {
-      background:#0b1d39;
-      color:white;
-      text-align:center;
-    }
+      /* WHY DELL */
+      .why-dell {
+        background: #0b1d39;
+        color: white;
+        text-align: center;
+      }
 
-    .why-dell i {
-      font-size:42px;
-      color:#0d6efd;
-      margin-bottom:10px;
-    }
+      .why-dell i {
+        font-size: 42px;
+        color: #0d6efd;
+        margin-bottom: 10px;
+      }
 
-    /* DEALERS */
-    .dealer-card {
-      background:#fff;
-      padding:30px;
-      border-radius:12px;
-      text-align:center;
-      box-shadow:0 6px 15px rgba(0,0,0,.1);
-      height:100%;
-    }
+      /* DEALERS */
+      .dealer-card {
+        background: #fff;
+        padding: 30px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        height: 100%;
+      }
 
-    section { padding: 80px 0; }
-    .ik:hover {
-        color:#0047ab;
+      section {
+        padding: 80px 0;
+      }
+      .ik:hover {
+        color: #0047ab;
         /* box-shadow: 0 0 15px rgba(56,189,248,0.6); */
         transition: all 0.3s ease;
         transform: scale(1.2);
+      }
+      /* Hover Dropdown */
+      .navbar .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+      }
+
+      /* Smooth animation */
+      .dropdown-menu {
+        animation: fadeIn 0.3s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
         }
-        /* Hover Dropdown */
-.navbar .dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0;
-}
-
-/* Smooth animation */
-.dropdown-menu {
-  animation: fadeIn 0.3s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-/* ===============================
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      /* ===============================
    MOBILE RESPONSIVE FIX
    (NO HTML CHANGE)
 ================================ */
-@media (max-width: 768px) {
+      @media (max-width: 768px) {
+        /* HEADER */
+        .hea {
+          flex-direction: column;
+          height: auto;
+          padding: 8px 0;
+          gap: 5px;
+          text-align: center;
+        }
 
-  /* HEADER */
-  .hea {
-    flex-direction: column;
-    height: auto;
-    padding: 8px 0;
-    gap: 5px;
-    text-align: center;
-  }
+        /* NAVBAR FIX */
+        .nav a,
+        .l {
+          padding-left: 0 !important;
+          margin-left: 0 !important;
+        }
 
-  /* NAVBAR FIX */
-  .nav a,
-  .l {
-    padding-left: 0 !important;
-    margin-left: 0 !important;
-  }
+        .navbar-nav {
+          padding-left: 0 !important;
+          text-align: center;
+        }
 
-  .navbar-nav {
-    padding-left: 0 !important;
-    text-align: center;
-  }
+        .ic {
+          justify-content: center;
+          margin: 10px 0;
+        }
 
-  .ic {
-    justify-content: center;
-    margin: 10px 0;
-  }
+        /* HERO */
+        .hero {
+          height: 300px;
+        }
 
-  /* HERO */
-  .hero {
-    height: 300px;
-  }
+        .h {
+          font-size: 30px !important;
+        }
 
-  .h {
-    font-size: 30px !important;
-  }
+        .pt {
+          font-size: 14px;
+        }
 
-  .pt {
-    font-size: 14px;
-  }
+        /* FEATURES STRIP */
+        .dii {
+          flex-direction: column;
+          height: auto;
+          padding: 20px 0;
+          gap: 20px;
+        }
 
-  /* FEATURES STRIP */
-  .dii {
-    flex-direction: column;
-    height: auto;
-    padding: 20px 0;
-    gap: 20px;
-  }
+        /* NEWS & OFFERS */
+        .cdo {
+          height: auto;
+        }
 
-  /* NEWS & OFFERS */
-  .cdo {
-    height: auto;
-  }
+        /* FEATURED DEALS CARDS */
+        .card {
+          width: 100% !important;
+          margin: auto;
+        }
 
-  /* FEATURED DEALS CARDS */
-  .card {
-    width: 100% !important;
-    margin: auto;
-  }
+        .card img {
+          width: 100% !important;
+          height: auto !important;
+        }
 
-  .card img {
-    width: 100% !important;
-    height: auto !important;
-  }
+        /* BADGE POSITION FIX */
+        .badge {
+          right: 10px !important;
+          left: auto !important;
+        }
 
-  /* BADGE POSITION FIX */
-  .badge {
-    right: 10px !important;
-    left: auto !important;
-  }
+        /* SHOP BY CATEGORY */
+        .hov {
+          margin-bottom: 15px;
+        }
 
-  /* SHOP BY CATEGORY */
-  .hov {
-    margin-bottom: 15px;
-  }
+        /* SERVICES */
+        .our {
+          height: auto;
+          padding-bottom: 30px;
+        }
 
-  /* SERVICES */
-  .our {
-    height: auto;
-    padding-bottom: 30px;
-  }
+        /* FOOTER */
+        footer .col-md-3 {
+          padding-left: 15px !important;
+          text-align: center;
+        }
 
-  /* FOOTER */
-  footer .col-md-3 {
-    padding-left: 15px !important;
-    text-align: center;
-  }
+        footer img {
+          margin: auto;
+          display: block;
+        }
 
-  footer img {
-    margin: auto;
-    display: block;
-  }
+        footer p {
+          font-size: 14px;
+        }
+      }
 
-  footer p {
-    font-size: 14px;
-  }
-}
-
-/* ===============================
+      /* ===============================
    EXTRA SMALL DEVICES
 ================================ */
-@media (max-width: 480px) {
+      @media (max-width: 480px) {
+        .h {
+          font-size: 24px !important;
+        }
 
-  .h {
-    font-size: 24px !important;
-  }
+        .pt {
+          font-size: 13px;
+        }
 
-  .pt {
-    font-size: 13px;
-  }
+        .btn {
+          font-size: 14px;
+          padding: 8px 16px;
+        }
 
-  .btn {
-    font-size: 14px;
-    padding: 8px 16px;
-  }
-
-  p {
-    font-size: 14px;
-  }
-}
-
+        p {
+          font-size: 14px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -264,7 +265,7 @@
 
     <nav
       class="navbar navbar-expand-lg navbar-dark sticky-top shadow"
-      style="background:linear-gradient(135deg,#000428,#004e92);"
+      style="background: linear-gradient(135deg, #000428, #004e92)"
     >
       <div class="container-fluid">
         <a class="navbar-brand text-white" href="index.html">
@@ -290,23 +291,33 @@
             style="padding-left: 280px"
           >
             <li class="nav-item">
-              <a class="nav-link  text-white nav-link-custom" href="index.html">Home</a>
+              <a class="nav-link text-white nav-link-custom" href="index.html"
+                >Home</a
+              >
             </li>
 
             <li class="nav-item">
-              <a class="nav-link  text-white nav-link-custom" href="About.html">About Us</a>
+              <a class="nav-link text-white nav-link-custom" href="About.html"
+                >About Us</a
+              >
             </li>
 
             <li class="nav-item">
-              <a class="nav-link text-white nav-link-custom" href="product.html">Products</a>
+              <a class="nav-link text-white nav-link-custom" href="product.html"
+                >Products</a
+              >
             </li>
 
             <li class="nav-item">
-              <a class="nav-link text-white nav-link-custom" href="faqs.html">Help & FAQs</a>
+              <a class="nav-link text-white nav-link-custom" href="faqs.html"
+                >Help & FAQs</a
+              >
             </li>
 
             <li class="nav-item">
-              <a class="nav-link text-white nav-link-custom" href="Contact.html">Contact Us</a>
+              <a class="nav-link text-white nav-link-custom" href="Contact.html"
+                >Contact Us</a
+              >
             </li>
 
             <li class="nav-item dropdown">
@@ -321,7 +332,9 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="Dell.html">Dell</a></li>
                 <li><a class="dropdown-item" href="acer.html">Acer</a></li>
-                <li><a class="dropdown-item" href="Toshiba.html">Toshiba</a></li>
+                <li>
+                  <a class="dropdown-item" href="Toshiba.html">Toshiba</a>
+                </li>
                 <li><a class="dropdown-item" href="Hp.html">HP</a></li>
                 <li><a class="dropdown-item" href="Asus.html">ASUS</a></li>
                 <li><a class="dropdown-item" href="lenovo.html">Lenovo</a></li>
@@ -344,84 +357,132 @@
         </div>
       </div>
     </nav>
-    
-<div class="offcanvas offcanvas-end" tabindex="-1" id="cartCanvas">
-  <div class="offcanvas-header">
-    <h5>Your Cart</h5>
-    <button class="btn-close" data-bs-dismiss="offcanvas"></button>
-  </div>
-  <div class="offcanvas-body">
-    <ul id="cartItems" class="list-group mb-3"></ul>
-    <div class="fw-bold">Total: $<span id="cartTotal">0.00</span></div>
-  </div>
-</div>
 
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartCanvas">
+      <div class="offcanvas-header">
+        <h5>Your Cart</h5>
+        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul id="cartItems" class="list-group mb-3"></ul>
+        <div class="fw-bold">Total: $<span id="cartTotal">0.00</span></div>
+      </div>
+    </div>
 
     <section class="support-hero">
       <h1 class="fw-bold">Acer Product Catalog</h1>
-      <p class="mt-2">Browse our complete selection of Acer products. All items come with manufacturer warranty and our dedicated support.</p>
+      <p class="mt-2">
+        Browse our complete selection of Acer products. All items come with
+        manufacturer warranty and our dedicated support.
+      </p>
     </section>
 
     <!-- STATS -->
-<section class="dell-stats container">
-  <div class="row text-center g-4">
-    <div class="col-md-4"><div class="stat-box"><h2>1</h2><p>Acer Products</p></div></div>
-    <div class="col-md-4"><div class="stat-box"><h2>1</h2><p>Product Categories</p></div></div>
-    <div class="col-md-4"><div class="stat-box"><h2>✔</h2><p>Authorized Dealer</p></div></div>
-  </div>
-</section>
-
-<!-- PRODUCTS -->
-<section class="container dell-products">
-  <h3 class="section-title">Featured Acer Products</h3>
-  <div class="row g-4 justify-content-center">
-    
-    <div class="col-md-4">
-      <div class="card">
-        <img src="images/acer laptop.jpg" alt="Acer Laptop">
-        <div class="card-body">
-          <h6>Acer Aspire 5 Business Laptop</h6>
-          <span>⭐⭐⭐⭐ (521)</span>
-          <h5>$649.99</h5>
-          <a href="aceraspire5.html" class="stretched-link"></a>
+    <section class="dell-stats container">
+      <div class="row text-center g-4">
+        <div class="col-md-4">
+          <div class="stat-box">
+            <h2>1</h2>
+            <p>Acer Products</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="stat-box">
+            <h2>1</h2>
+            <p>Product Categories</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="stat-box">
+            <h2>✔</h2>
+            <p>Authorized Dealer</p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- WHY DELL -->
-<section class="why-dell">
-  <div class="container">
-    <h3 class="section-title text-white">Why Choose Acer?</h3>
-    <div class="row text-center g-4">
-      <div class="col-md-4"><i class="bi bi-lightning-charge"></i><h6>Powerful Performance</h6><p>Latest Intel & AMD processors for smooth multitasking</p></div>
-      <div class="col-md-4"><i class="bi bi-laptop"></i><h6>Sleek Design</h6><p>Lightweight, stylish laptops built for everyday use</p></div>
-      <div class="col-md-4"><i class="bi bi-shield-check"></i><h6>Trusted Quality</h6><p>Official Acer warranty with reliable local support</p></div>
-    </div>
-  </div>
-</section>
+    <!-- PRODUCTS -->
+    <section class="container dell-products">
+      <h3 class="section-title">Featured Acer Products</h3>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/acer laptop.jpg" alt="Acer Laptop" />
+            <div class="card-body">
+              <h6>Acer Aspire 5 Business Laptop</h6>
+              <span>⭐⭐⭐⭐ (521)</span>
+              <h5>$649.99</h5>
+              <a href="aceraspire5.html" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- DEALERS -->
-<section class="container dealer-box">
-  <h3 class="section-title">Authorized Acer Dealers</h3>
-  <div class="row g-4">
-    <div class="col-md-4"><div class="dealer-card"><h6>Main Branch</h6><p>123 Tech Street</p><p>+1 (555) 123-4567</p></div></div>
-    <div class="col-md-4"><div class="dealer-card"><h6>North Service Center</h6><p>456 Innovation Ave</p><p>+1 (555) 234-5678</p></div></div>
-    <div class="col-md-4"><div class="dealer-card"><h6>South Service Center</h6><p>789 Computer Lane</p><p>+1 (555) 345-6789</p></div></div>
-  </div>
-</section>
+    <!-- WHY DELL -->
+    <section class="why-dell">
+      <div class="container">
+        <h3 class="section-title text-white">Why Choose Acer?</h3>
+        <div class="row text-center g-4">
+          <div class="col-md-4">
+            <i class="bi bi-lightning-charge"></i>
+            <h6>Powerful Performance</h6>
+            <p>Latest Intel & AMD processors for smooth multitasking</p>
+          </div>
+          <div class="col-md-4">
+            <i class="bi bi-laptop"></i>
+            <h6>Sleek Design</h6>
+            <p>Lightweight, stylish laptops built for everyday use</p>
+          </div>
+          <div class="col-md-4">
+            <i class="bi bi-shield-check"></i>
+            <h6>Trusted Quality</h6>
+            <p>Official Acer warranty with reliable local support</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- DEALERS -->
+    <section class="container dealer-box">
+      <h3 class="section-title">Authorized Acer Dealers</h3>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="dealer-card">
+            <h6>Main Branch</h6>
+            <p>123 Tech Street</p>
+            <p>+1 (555) 123-4567</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="dealer-card">
+            <h6>North Service Center</h6>
+            <p>456 Innovation Ave</p>
+            <p>+1 (555) 234-5678</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="dealer-card">
+            <h6>South Service Center</h6>
+            <p>789 Computer Lane</p>
+            <p>+1 (555) 345-6789</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<footer class="container-fluid text-white pt-4" style="background:linear-gradient(135deg,#000428,#004e92);">
+    <footer
+      class="container-fluid text-white pt-4"
+      style="background: linear-gradient(135deg, #000428, #004e92)"
+    >
       <div class="row px-4">
         <div class="col-md-3 mb-3">
           <a href="index.html">
-          <img
-            src="images/logo (5).png"
-            alt="logo"
-            style="height: 55px; width: 60px; margin-bottom: 10px"
-          />
+            <img
+              src="images/logo (5).png"
+              alt="logo"
+              style="height: 55px; width: 60px; margin-bottom: 10px"
+            />
           </a>
           <p>
             Your trusted IT solutions partner with over 2 years of experience
@@ -436,20 +497,20 @@
         <div class="col-md-3 mb-3" style="padding-left: 90px">
           <h5>Quick Links</h5>
           <a href="index.html" style="text-decoration: none; color: white">
-          <p class="hovee">Home</p>
+            <p class="hovee">Home</p>
           </a>
           <a href="product.html" style="text-decoration: none; color: white">
-          <p class="hovee">Products</p>
+            <p class="hovee">Products</p>
           </a>
           <a href="faqs.html" style="text-decoration: none; color: white">
-          <p class="hovee">Help & Support</p>
+            <p class="hovee">Help & Support</p>
           </a>
           <a href="About.html" style="text-decoration: none; color: white">
             <p class="hovee">About Us</p>
           </a>
           <a href="Contact.html" style="text-decoration: none; color: white">
             <p class="hovee">Contact</p>
-            </a>
+          </a>
         </div>
 
         <div class="col-md-3 mb-3" style="padding-left: 90px">
